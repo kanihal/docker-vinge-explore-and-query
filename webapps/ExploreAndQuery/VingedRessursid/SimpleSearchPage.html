@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Dat-a-MazeHouse</title>
+
+ 		<link rel="shortcut icon" href="logo.ico">
+
+		<link rel="stylesheet" href="css/style.css">
+		<style type="text/css">a {text-decoration: none}</style>
+		
+		<!-- For Editor Controller -->
+		<script src="js/codemirror.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/sparql_colors.js"></script>
+
+		<script src="js/show-hint.js"></script>
+		<script src="js/spar-hint.js"></script>
+		<link href="css/show-hint.css" rel="stylesheet" >
+
+		<link  href="css/codemirror.css" rel="stylesheet">
+		<!--link  href="css/doc.css" rel="stylesheet"-->
+		<link  href="css/sparqlcolors.css"/ rel="stylesheet" >
+		<link  href="css/treeview.css"/ rel="stylesheet" >
+		
+		<script src="JScript/Shared.js"></script>
+		
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		
+  <script>
+  $(function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "content"
+    });
+  });
+  
+	function ClearText(){
+
+		document.getElementById("search_string").value="";
+
+		editor_cls.setValue('');	
+		document.getElementById("code_cls").value="";
+		
+		editor_prop.setValue('');			
+		document.getElementById("code_prop").value="";
+	}
+  
+  </script>
+  
+    </head>
+    <body>
+		<br>
+		<!--#include FILE="html/toolbar.html" -->
+		<div id="outer-container">
+			_TOOLBAR_
+			<br>
+			<div id="tools" style="color:#66CCFF;font-size:3px;></div>
+			<div align="left" >
+				<span style="font-family: Georgia, Times New Roman, Times, serif; font-size: 24px; color:#6699FF;">|</span>
+			</div>			
+		</div>
+		<br>
+
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!------------------------------ HTML start  ---------------------------------------------Add your site or application content here -->
+		<div id="container">
+			FORM_START
+			<input id="Seach" type="submit" class="button_1" value="Search"  title="Perform fre text search"></input>	
+			<a href="AbortQuery"><span style="color:#c0004b; font-family:Verdana; font-size:small; padding:25px">Abort long running search!</span></a>				
+
+					<div id="help_text-container2" >	
+					<br>
+					<span style="color:gray; font-family:Verdana; font-size:medium;">This page is the entry in to the Data Maze. Look for the door!
+					You have following options for how to get in:
+
+					<div id="accordion">
+					  <h3>Free text search</h3>
+					  <div>						
+						<p>By searching for instances of things you know should exist in the data. This is free text search, like Google. From hit list select one instance and start browsing relations and explore the model.</p>
+					  </div>
+					  <h3>Concept search</h3>
+					  <div>
+						<p>Searching for a concept or class of instances, then by selecting one class and listing the instances of it. Select one instance and start exploring.
+						<br>Only concepts defined as owl:Class or rdfs:Class are listed.
+						</p>
+						</div>
+					  <h3>Property search</h3>
+					  <div>
+						<p>Searching for a property (attribute or relation), then selecting one and listing pairs of subject-object where the selected property occurs. Select either one and start exploring.
+						<br>Only properties defined as owl:DatatypeProperty or owl:ObjectProperty are listed.
+						</p>
+						</div>
+					  <h3>Combination of above</h3>
+					  <div>
+						<p>Limit the text search with the concept and/or property.<br>When combining with concept then the object of a triple pattern is limited by the selected concept.<br> 
+						When combining with property then the the free text is searched in the subject literal that the selected property points to.
+						In this case the selected property must be datatype property.
+						</p>
+					  </div>
+					</div>					
+
+					</span>
+					</div>
+
+			<table>
+				<tbody>
+					<tr>
+						<td width="400" height="250" align="left" valign="top">
+							
+							<input name=format type="hidden" value='text/html'></input>
+							<span><br>Enter Free Text string</span>
+							<br>							
+							<input size = "50" name="search_string" id="search_string" style="font-family:Verdana; font-size:large; color:blue;" ></input>
+							<br><br>
+							<div id="help_text-container1" >
+							<span>You can combine words logically with AND, OR, NOT, NEAR using brackets<br>
+							You can use wildcards after 4 character. You need to use quotes when using wildcards and logical operators. If you don't use quotes then AND is appllied between words</span>
+							<br>							
+							<span>Example: Soccer player , ("heart" OR "cardi*") AND NOT ("alco*" OR "smok*") AND ("infect*" NEAR muscle)</span>
+							<br><br>
+							<span>NB! If your search string contains any unicode characters, you need to put them between quotes as well. Example: "M&uuml;nchen"</span>
+							<br>
+							<br>
+							</div>
+							<span style="color:red">! Not all Triple stores/SPARQL endpoints support Free Text Search</span>
+							<br>
+						</td>
+						<td valign="top" style ="padding:25px; color:gray; font-weight:bold"><br><br>And<br>Or</td>
+						<td width="400" valign="top" >
+							<span><br>Enter Name of the Class/Concept</span>
+									
+							<input size = "60" name="class" id="code_cls" ></input>
+							<br>
+							<div id="help_text-container1" >						
+							<span>Press CTRL + SPACE to get list of all concepts. Then pick from the list or start typing to find your class.</span>
+							</div>
+						</td>
+						<td valign="top" style ="padding:25px; color:gray; font-weight:bold"><br><br>And<br>Or</td>
+						<td width="400" valign="top" >
+							<span><br>Enter Name of the Property</span>	
+							
+							<input size = "60" name="property" id="code_prop" ></input>
+							
+							<div id="help_text-container1" >						
+							<span>Press CTRL + SPACE to get list of all properties. Then pick from the list or start typing to find your property.<br>
+							</span>
+							</div>
+							<br>
+							<input id="Clear" onclick="ClearText()" type="button" style="float: right;" class="button_2" value="Clear All" title="Clear all search fields"/>	
+						</td>	
+					</tr>
+				</tbody>
+			</table>
+			FORM_END
+
+			<footer>
+				<hr/>
+					<img align="right" src="Vinge3.png" height="60"/>
+				<br>	
+		</div>
+		<!-----------------------------  HTML end -------------------------------------------------------------->
+ 
+	
+	    <script src="js/ECProperties.js"></script>
+		<script src="js/ECClasses.js"></script>
+		
+    </body>
+</html>

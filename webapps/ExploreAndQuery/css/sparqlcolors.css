@@ -1,0 +1,28 @@
+html {
+  cursor: text;
+}
+.editbox {
+  margin: .4em;
+  padding: 0;
+  font-family: Verdana;
+  font-size: 12pt;
+  color: black;
+}
+
+.editbox p {
+  margin: 0;
+}
+
+/* Use for SPARQL */
+/* DEFAULT THEME */
+.cm-s-default .cm-keyword {color: #708;green;font-family:Verdana;font-size:13px;font-weight:900;}
+.cm-s-default .cm-tokens {color: navy;font-weight:bolder;}
+.cm-s-default .cm-comment {color: green;font-family:Verdana; font-size:15px;}
+.cm-s-default .cm-variable {color: #2C3539;}
+.cm-s-default .cm-atom {color: #0333d0;}
+.cm-s-default .cm-meta {color: #555;}
+.cm-s-default .cm-variable-2 {color: #B00000;}
+.cm-s-default .cm-variable-3 {color: #B00000;}
+	span.cm-invalid { border-bottom:2px dotted red;}
+	span.cm-lang { color: #088;}
+	span.cm-url { color: #6B8E23; }

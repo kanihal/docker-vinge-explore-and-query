@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Sgvizler</title>
+    <meta charset="UTF-8"/>
+	<link rel="shortcut icon" href="logo.ico">
+    <link rel="stylesheet" type="text/css" href="http://sgvizler.googlecode.com/svn/www/sgvizler.css" />
+	<link rel="stylesheet" href="css/style.css">
+  
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" id="sgvzlr_script" src="http://sgvizler.googlecode.com/svn/release/0.5/sgvizler.js"></script>
+    <script type="text/javascript">
+        //// Leave this as is. Ready, steady, GO!
+       $(document).ready(sgvizler.go());
+    </script>
+  </head>
+  <body>
+	<br>
+	<div id="table-container" >
+		<div id="sgvzlr_cMessage"></div>
+		
+		<div id="sgvzl_vinge_query" data-sgvizler-endpoint="_ENDPOINT_" 
+			data-sgvizler-query="_QUERY_"
+			data-sgvizler-chart="_CHARTTYPE_" 
+			data-sgvizler-loglevel="2" 
+			style="width:1800px; height:700px;">
+		</div>
+
+		   <div id="footer">
+
+			<!-- Please leave a link to the Sgvizler homepage --> 
+			<p>Sgvizler visualizes the result of SPARQL SELECT queries using javascript and the Google Visualization API. For more information, see the 
+				<a href="http://code.google.com/p/sgvizler/">Sgvizler</a>homepage. (c) 2011 Martin G. Skj&#230;veland.
+			</p>
+
+			  <a href="http://code.google.com/p/sgvizler/">
+				<img height="70" src="http://sgvizler.googlecode.com/svn/www/mr.sgvizler.png" alt="mr.sgvizler.png"/>
+			  </a><br/>Mr. Sgvizler
+
+		</div>
+	</div>
+
+		   	<img align="right" src="Vinge3.png" height="60"/>
+			<p align="right"><span align="right" style="color=blue; font-family:Verdana; font-size:small; padding:25px">integrated by</span></p>	
+
+  </body>
+</html>

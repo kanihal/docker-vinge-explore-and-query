@@ -1,0 +1,409 @@
+{
+  "head": {
+    "vars": [ "_wikiPageID" , "_name" , "_comment" , "_description" , "Person" , "_abstract" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "38616368" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Andreas Ekberg" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Andreas Ekberg (born 2 January 1985) is a Swedish football referee. Ekberg currently resides in Malmö. He has been a full international referee for FIFA since 2013. He became a professional referee in 2004 and has been an Allsvenskan referee since 2009. Ekberg has refereed 74 matches in Allsvenskan, 55 matches in Superettan and 14 international matches as of 2014." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Swedish football referee" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Andreas_Ekberg" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Andreas Ekberg (born 2 January 1985) is a Swedish football referee. Ekberg currently resides in Malmö. He has been a full international referee for FIFA since 2013. He became a professional referee in 2004 and has been an Allsvenskan referee since 2009. Ekberg has refereed 74 matches in Allsvenskan, 55 matches in Superettan and 14 international matches as of 2014." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "24188476" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Danilo Tognon" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "The Canoeist Danilo Tognon (born October 9, 1937) is an Italian sprint canoer who competed in the early 1960s. He was eliminated in the semifinals of the C-1 1000 m event at the 1960 Summer Olympics in Rome(the capital of Italy)." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Italian canoeist" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Danilo_Tognon" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "The Canoeist Danilo Tognon (born October 9, 1937) is an Italian sprint canoer who competed in the early 1960s. He was eliminated in the semifinals of the C-1 1000 m event at the 1960 Summer Olympics in Rome(the capital of Italy)." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "34851942" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Lorine Livington Pruette" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Lorine Livington Pruette (1896\u20131977) was an American feminist, psychologist, and writer." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "American psychologist" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Lorine_Livington_Pruette" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Lorine Livington Pruette (1896\u20131977) was an American feminist, psychologist, and writer." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "35710429" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Megan Lawrence" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Megan Lawrence (born 1972) is an American actress best known for her roles on Broadway. Among other honors, she has been nominated for a Tony Award. She has also appeared Off-Broadway, in regional theatre and on television." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Theatre actor" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Megan_Lawrence" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Megan Lawrence (born 1972) is an American actress best known for her roles on Broadway. Among other honors, she has been nominated for a Tony Award. She has also appeared Off-Broadway, in regional theatre and on television." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "41728834" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Mirza Abolhassan Khan Ghaffari" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Abu'l-Hasan Khan Ghaffari Kashani (1814\u20131866) (Persian: ابوالحسن غفاری\u200E\u200E), also known as Sani ol Molk (Persian: صنیع\u200Cالملک\u200E\u200E) was an Iranian painter, miniature and lacquer artist and book illustrator." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Iranian painter" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Sani_ol_molk" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Abu'l-Hasan Khan Ghaffari Kashani (1814\u20131866) (Persian: ابوالحسن غفاری\u200E\u200E), also known as Sani ol Molk (Persian: صنیع\u200Cالملک\u200E\u200E) was an Iranian painter, miniature and lacquer artist and book illustrator." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "38782576" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Siniša Žugic" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Siniša Žugić (Serbian: Синиша Жугић) (born December 17, 1969) is a Serbian diver. He competed at the 1996 Summer Olympics in Atlanta and took 38th place in Men's Springboard. He currently works as a coach in Vračar Diving Club." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Serbian diver" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Siniša_Žugić" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Siniša Žugić (Serbian: Синиша Жугић) (born December 17, 1969) is a Serbian diver. He competed at the 1996 Summer Olympics in Atlanta and took 38th place in Men's Springboard. He currently works as a coach in Vračar Diving Club." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "26185854" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "William Bagot, 2nd Baron Bagot" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "William Bagot, 2nd Baron Bagot (11 September 1773 \u2013 12 February 1856) was a British peer. William Bagot was born in London, the eldest son of William Bagot, 1st Baron Bagot, and his second wife Elizabeth Louisa St John. He was educated at Westminster School and matriculated at Christ Church, Oxford on 10 November 1791. He married twice; firstly the Hon. Emily Fitzroy, daughter of Lt-Gen Charles Fitzroy, 1st Baron Southampton on 30 May 1799 and secondly (after the death in 1800 of his first wife) Lady Louisa Legge, daughter of George Legge, 3rd Earl of Dartmouth on 17 February 1807. He succeeded to his titles of 7th Baronet Bagot, of Blithfield and 2nd Baron Bagot of Bagot's Bromley on 22 October 1798. He had one child, Louisa Barbara who died in infancy, by his first wife and six children," } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "British noble" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/William_Bagot,_2nd_Baron_Bagot" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "William Bagot, 2nd Baron Bagot (11 September 1773 \u2013 12 February 1856) was a British peer. William Bagot was born in London, the eldest son of William Bagot, 1st Baron Bagot, and his second wife Elizabeth Louisa St John. He was educated at Westminster School and matriculated at Christ Church, Oxford on 10 November 1791. He married twice; firstly the Hon. Emily Fitzroy, daughter of Lt-Gen Charles Fitzroy, 1st Baron Southampton on 30 May 1799 and secondly (after the death in 1800 of his first wife) Lady Louisa Legge, daughter of George Legge, 3rd Earl of Dartmouth on 17 February 1807. He succeeded to his titles of 7th Baronet Bagot, of Blithfield and 2nd Baron Bagot of Bagot's Bromley on 22 October 1798. He had one child, Louisa Barbara who died in infancy, by his first wife and six children, Louisa Frances, Agnes, William (his successor), Hervey Charles, Eleanor and Alfred Walter by his second. He was invested as a Fellow of Society of Antiquaries and then in 1834 awarded the honorary degree of Doctor of Civil Law (D.C.L.) by Oxford University. He wrote a book in 1823 \"Memorials of the Bagot Family\" detailing the Bagot family genealogy up to that point. Lord Bagot died at the family home in Blithfield, Staffs and was succeeded in his titles by William Bagot, 3rd Baron Bagot." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "35810990" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Witold Gerutto" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Witold Gerutto (1 October 1912 in Harbin, China \u2013 13 October 1973 in Konstancin) was a Polish shot putter and decathlete who competed in the 1948 Summer Olympics." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Olympic athlete" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Witold_Gerutto" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Witold Gerutto (1 October 1912 in Harbin, China \u2013 13 October 1973 in Konstancin) was a Polish shot putter and decathlete who competed in the 1948 Summer Olympics." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "22919777" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Abdul Waheed" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Abdul Waheed (born November 30, 1936), also known as Abdul Waheed Khan, was a member of Pakistan's gold medal winning 1960 Olympic Hockey team.He played center forward, and scored the first goal in the team's final game. In September 2000 Abdul Waheed was interviewed by the changes in the motivation of Olympic athletes since his team won the gold medal: \"When we won Olympic gold in hockey in 1960 we did not get anything in return. We would walk for miles to reach grounds and it was passion not lust that ruled our hearts.\"" } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Pakistani field hockey player" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Abdul_Waheed_(field_hockey)" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Abdul Waheed (born November 30, 1936), also known as Abdul Waheed Khan, was a member of Pakistan's gold medal winning 1960 Olympic Hockey team.He played center forward, and scored the first goal in the team's final game. In September 2000 Abdul Waheed was interviewed by the changes in the motivation of Olympic athletes since his team won the gold medal: \"When we won Olympic gold in hockey in 1960 we did not get anything in return. We would walk for miles to reach grounds and it was passion not lust that ruled our hearts.\"" }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "20275529" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Ahmet Kurt Pasha" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Ahmet Kurt Pasha was the founder and the first ruler of the Pashalik of Berat, a semi-autonomous area within the Ottoman Empire. He descended from the Muzaka family, which in the late Middle Ages had founded the Lordship of Berat." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Albanian noble" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Ahmet_Kurt_Pasha" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Ahmet Kurt Pasha was the founder and the first ruler of the Pashalik of Berat, a semi-autonomous area within the Ottoman Empire. He descended from the Muzaka family, which in the late Middle Ages had founded the Lordship of Berat." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "46898929" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Anatoliy Abdula" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Anatoliy Borysovych Abdula (Ukrainian: Анатолій Борисович Абдула, born 12 November 1976 in Kharkiv, Ukraine) is an Ukrainian professional football referee. He has been a full international for FIFA since 2012." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Ukrainian association football player and association football referee" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Anatoliy_Abdula" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Anatoliy Borysovych Abdula (Ukrainian: Анатолій Борисович Абдула, born 12 November 1976 in Kharkiv, Ukraine) is an Ukrainian professional football referee. He has been a full international for FIFA since 2012." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "46897015" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Antonio Bova" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Antonio Bova (1641- October 15, 1701) was an Italian painter, active mainly in Sicily." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Italian painter" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Antonio_Bova" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Antonio Bova (1641- October 15, 1701) was an Italian painter, active mainly in Sicily." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "13214338" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Antonio Modarelli" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Antonio Modarelli (born Braddock, Pennsylvania \u2013 died 1954) was an American conductor and composer. Though popular in Europe, even to the point of being the first American to be invited into the Gesellschaft der deutschen Komponisten, Modarelli was never really appreciated at home, being asked to resign by the board of the Pittsburgh Symphony Orchestra in 1936. Other orchestras led by Modarelli include the Wheeling Symphony Orchestra from 1937 to 1942 and West Virginia Symphony Orchestra from 1942 to 1954." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "American conductor" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Antonio_Modarelli" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Antonio Modarelli (born Braddock, Pennsylvania \u2013 died 1954) was an American conductor and composer. Though popular in Europe, even to the point of being the first American to be invited into the Gesellschaft der deutschen Komponisten, Modarelli was never really appreciated at home, being asked to resign by the board of the Pittsburgh Symphony Orchestra in 1936. Other orchestras led by Modarelli include the Wheeling Symphony Orchestra from 1937 to 1942 and West Virginia Symphony Orchestra from 1942 to 1954." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "26122586" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Antun Herceg" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Antun Herceg (Serbian Cyrillic: Aнтун Xepцeг; born November 9, 1927 in Inđija, Kingdom of Yugoslavia) is a former Serbian football player." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Serbian footballer" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Antun_Herceg" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Antun Herceg (Serbian Cyrillic: Aнтун Xepцeг; born November 9, 1927 in Inđija, Kingdom of Yugoslavia) is a former Serbian football player." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "42065702" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Astrit Hafizi" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Astrit Hafizi is an Albanian former footballer and coach of Vllaznia, as well as coach of Albania in a two years span (1997-1999)." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Albanian footballer" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Astrit_Hafizi" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Astrit Hafizi is an Albanian former footballer and coach of Vllaznia, as well as coach of Albania in a two years span (1997-1999)." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "15186540" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Barry James" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Barry James Tolentino Cruz is a stage actor and singer." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "British actor" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Barry_James" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Barry James Tolentino Cruz is a stage actor and singer." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "42261005" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Bojan Pandžić" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Bojan Pandžić (born 13 March 1982) is a Swedish football referee. Pandžić currently resides in Hisings Backa, part of Gothenburg. He has been a full international referee for FIFA since 2014. He became a professional referee in 2004 and has been an Allsvenskan referee since 2009. Pandzic has refereed 42 matches in Allsvenskan, 65 matches in Superettan and 8 international matches as of 2014." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Swedish football referees" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Bojan_Pandžić" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Bojan Pandžić (born 13 March 1982) is a Swedish football referee. Pandžić currently resides in Hisings Backa, part of Gothenburg. He has been a full international referee for FIFA since 2014. He became a professional referee in 2004 and has been an Allsvenskan referee since 2009. Pandzic has refereed 42 matches in Allsvenskan, 65 matches in Superettan and 8 international matches as of 2014." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "51260061" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Briana Provancha" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Briana Provancha (born 25 April 1989) is a United States Olympic sailing contestant." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "US Olympic sailing contestant" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Briana_Provancha" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Briana Provancha (born 25 April 1989) is a United States Olympic sailing contestant." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "49875838" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Courtney Okolo" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Courtney Okolo (March 15, 1994) is an American track and field sprinter who competes in the 400-meter dash. She starred at Carrollton (Texas) Newman Smith High School where she won multiple individual state championships. Internationally she won both individual and relay events for the United States at the 2013 Pan American Junior Athletics Championships and the 2015 NACAC Championships in Athletics. Another gold came in the 4 × 400 m relay at the 2016 IAAF World Indoor Championships." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "American athletics competitor" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Courtney_Okolo" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Courtney Okolo (March 15, 1994) is an American track and field sprinter who competes in the 400-meter dash. She starred at Carrollton (Texas) Newman Smith High School where she won multiple individual state championships. In college she ran for the Texas Longhorns. She was fourth in the 400 m at the 2013 NCAA Outdoor Championships and then the following year she completed an individual and relay double at the 2014 NCAA Outdoor Championships. She set an American collegiate record in the 400 m that year when winning the Big 12 Outdoor Championships in 50.03 seconds. Okolo won consecutive titles in the women's 400 m and 4 × 400 m relay at the 2015 NCAA Outdoor Championships. Internationally she won both individual and relay events for the United States at the 2013 Pan American Junior Athletics Championships and the 2015 NACAC Championships in Athletics. Another gold came in the 4 × 400 m relay at the 2016 IAAF World Indoor Championships." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "36577373" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Daryl Homer" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Daryl Homer (born July 16, 1990) is an American Olympic saber fencer. He competed in the 2012 Summer Olympics and the 2016 Summer Olympics. He won the silver medal in individual saber at the 2016 Olympics. He was also a silver medalist at the 2015 World Fencing Championships, and is a five-time gold medalist at the Pan American Fencing Championships." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "American fencer" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Daryl_Homer" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Daryl Homer (born July 16, 1990) is an American Olympic saber fencer. He competed in the 2012 Summer Olympics and the 2016 Summer Olympics. He won the silver medal in individual saber at the 2016 Olympics. He was also a silver medalist at the 2015 World Fencing Championships, and is a five-time gold medalist at the Pan American Fencing Championships." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "31992906" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Edward Ling" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Edward \"Ed\" Ling (born 7 March 1983) is an English sport shooter who represented Great Britain at the 2004 Summer Olympics, 2012 Summer Olympics, and 2016 Summer Olympics. Ling was born in Taunton, Somerset. At the 2004 Summer Olympics in Athens he participated in the men's trap event, finishing tied for 25th position. In 2012, he also competed in the men's trap, finishing in 21st position. At the 2016 Summer Olympics, he won the bronze medal in the men's trap." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "English sports shooter" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Edward_Ling" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Edward \"Ed\" Ling (born 7 March 1983) is an English sport shooter who represented Great Britain at the 2004 Summer Olympics, 2012 Summer Olympics, and 2016 Summer Olympics. Ling was born in Taunton, Somerset. At the 2004 Summer Olympics in Athens he participated in the men's trap event, finishing tied for 25th position. In 2012, he also competed in the men's trap, finishing in 21st position. At the 2016 Summer Olympics, he won the bronze medal in the men's trap." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "40194579" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Evangelista Schiano" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Evangelista Schiano (active 1755 to 1776-1777) was an Italian painter, mainly of sacred subjects." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Italian painter" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Evangelista_Schiano" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Evangelista Schiano (active 1755 to 1776-1777) was an Italian painter, mainly of sacred subjects." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "27787905" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Francesco Boffo" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Francesco Carlo Boffo (Cyrillic: Франц Карлович Боффо; 1796\u20131867) was a Swiss-Italian-born Neoclassical architect who designed more than 30 buildings in Odessa between 1818 and 1861, including the famous Potemkin Stairs." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Sardinian-born Neoclassical architect" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Francesco_Boffo" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Francesco Carlo Boffo (Cyrillic: Франц Карлович Боффо; 1796\u20131867) was a Swiss-Italian-born Neoclassical architect who designed more than 30 buildings in Odessa between 1818 and 1861, including the famous Potemkin Stairs. Boffo was probably born in 1796 in Sardinia  and he was apprenticed to an architect in Ticino. He then joined the University of Turin before entering the service of the Potocki noble family in Poland. He served as Odessa's chief architect between 1822 and 1844. His patrons included Count Michael Vorontsov and his wife, Elisabeth Branicka. Boffo was responsible for transforming Odessa into the open-air museum of Neoclassical architecture, rivalling St. Petersburg in the north of Imperial Russia. The Potocki Palace, Shidlovsky, and Vorontsov Palaces in Odessa were built to his designs, as was the Czarnomski Palace near Bershad (1817). The latter is famed for its uncanny resemblance to the White House. The Potemkin Stairs, Boffo's most ambitious undertaking, was modeled on the earlier Depaldo Stairs, designed by him for the town of Taganrog in 1823. It was Boffo who conceived a 22-metre memorial column for the Kagul battlefield. He also built the Londonskaya Hotel building in 1826-28 as a private residence. The architect died in 1867 and he was buried in Odessa." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "29771314" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Franciszek Szymura" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Franciszek Szymura (December 7, 1912, Dortmund \u2013 May 18, 1985, Warsaw) was a Polish boxer who competed four times in the European Amateur Boxing Championships (1937, 1939, 1947, and 1949) and in the 1948 Summer Olympics." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Polish boxer" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Franciszek_Szymura" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Franciszek Szymura (December 7, 1912, Dortmund \u2013 May 18, 1985, Warsaw) was a Polish boxer who competed four times in the European Amateur Boxing Championships (1937, 1939, 1947, and 1949) and in the 1948 Summer Olympics. He won twice the silver medal in the 1937 European Amateur Boxing Championships in Milan and the 1939 European Amateur Boxing Championships in Dublin, beat twice by Luigi Musina, the upcoming professional European champion (1942\u20131947). At the 1948 Summer Olympics in London, he was eliminated in the quarterfinals of the Light heavyweight class after losing his fight to the upcoming bronze medalist Mauro Cia." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "36234937" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Frano Vićan" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Frano Vićan (born 24 January 1976 in Dubrovnik) is a Croatian water polo player who competed in the 2000 Summer Olympics, in the 2004 Summer Olympics, and in the 2008 Summer Olympics. He was also a member of Croatia's gold medal winning team at the 2012 Summer Olympics." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Olympic water polo player" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Frano_Vićan" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Frano Vićan (born 24 January 1976 in Dubrovnik) is a Croatian water polo player who competed in the 2000 Summer Olympics, in the 2004 Summer Olympics, and in the 2008 Summer Olympics. He was also a member of Croatia's gold medal winning team at the 2012 Summer Olympics." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "49436709" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "George Green" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "George Green (born September 15, 1927) is a former NASCAR Grand National (now Sprint Cup Series) driver. He finished 55th at both the 1959 Daytona 500 and the 1960 Daytona 500, with him exiting the 1960 race with a gas tank explosion. He also finished 16th in the 1962 NASCAR Grand National Series standings, racing 46 of 53 total races. Green was also a sergeant in the U.S. Army." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "American racing driver" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/George_Green_(driver)" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "George Green (born September 15, 1927) is a former NASCAR Grand National (now Sprint Cup Series) driver. He finished 55th at both the 1959 Daytona 500 and the 1960 Daytona 500, with him exiting the 1960 race with a gas tank explosion. He also finished 16th in the 1962 NASCAR Grand National Series standings, racing 46 of 53 total races. Green was also a sergeant in the U.S. Army." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "11798379" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "George Sime" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "George Brander Sime (28 February 1915 \u2013 9 September 1990) was a British and Scottish international field hockey player who competed in the 1948 Summer Olympics. He was a member and captain of the British field hockey team, which won the silver medal. He played all five matches as halfback." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Field hockey player" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/George_Sime" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "George Brander Sime (28 February 1915 \u2013 9 September 1990) was a British and Scottish international field hockey player who competed in the 1948 Summer Olympics. He was a member and captain of the British field hockey team, which won the silver medal. He played all five matches as halfback." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "14849282" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Grace McKenzie" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Grace McKenzie (8 July 1903 \u2013 August 1988) was an English swimmer from Garston, who competed in the 1920 Summer Olympics and 1924 Summer Olympics. In the 1920 Olympics she won a silver medal in the 4×100 m freestyle relay event and was third in the first round of 100 m freestyle event and fourth in the first round of 300 m freestyle event and did not advance in both occasions. Four years later in Paris she won a silver medal in the 4×100 m freestyle relay event." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "British swimmer, Olympic silver medallist" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Grace_McKenzie" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Grace McKenzie (8 July 1903 \u2013 August 1988) was an English swimmer from Garston, who competed in the 1920 Summer Olympics and 1924 Summer Olympics. In the 1920 Olympics she won a silver medal in the 4×100 m freestyle relay event and was third in the first round of 100 m freestyle event and fourth in the first round of 300 m freestyle event and did not advance in both occasions. Four years later in Paris she won a silver medal in the 4×100 m freestyle relay event." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "11777814" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Graham Dadds" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Graham Bassett Dadds (16 March 1911 \u2013 8 March 1980) was a British field hockey player who competed in the 1952 Summer Olympics. He was a member of the British field hockey team, which won the bronze medal. He played one match as goalkeeper." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Field hockey player" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Graham_Dadds" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Graham Bassett Dadds (16 March 1911 \u2013 8 March 1980) was a British field hockey player who competed in the 1952 Summer Olympics. He was a member of the British field hockey team, which won the bronze medal. He played one match as goalkeeper." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "38859870" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Hovhannes Avtandilyan" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Hovhannes Avtandilyan (Armenian: Հովհաննէս Ավթանդիլյան, born February 15, 1978 in Yerevan, Armenian SSR) is a male Armenian retired diver. He is a two-time Olympian who competed at the 1996 Summer Olympics and 2000 Summer Olympics in the men's 10 metre platform." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Armenian diver" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Hovhannes_Avtandilyan" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Hovhannes Avtandilyan (Armenian: Հովհաննէս Ավթանդիլյան, born February 15, 1978 in Yerevan, Armenian SSR) is a male Armenian retired diver. He is a two-time Olympian who competed at the 1996 Summer Olympics and 2000 Summer Olympics in the men's 10 metre platform." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "51250058" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Ilya Mokretsov" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Ilya Mokretsov, sometimes spelt Mokretcov (Russian: Илья Мокрецов, born 17 April 1984, Kazan) is a male sabre fencer who first represented Russia, then Kazakhstan." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Kazakhstani fencer" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Ilya_Mokretsov" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Ilya Mokretsov, sometimes spelt Mokretcov (Russian: Илья Мокрецов, born 17 April 1984, Kazan) is a male sabre fencer who first represented Russia, then Kazakhstan." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "35928437" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Jan Brumovský" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Jan Brumovský (born 26 June 1937) is a Czech former football forward who competed in the 1964 Summer Olympics. He played in the Czechoslovak First League at club level for Dukla Prague, taking part in 242 matches and scoring 42 goals." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "czech soccer player" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Jan_Brumovský" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Jan Brumovský (born 26 June 1937) is a Czech former football forward who competed in the 1964 Summer Olympics. He played in the Czechoslovak First League at club level for Dukla Prague, taking part in 242 matches and scoring 42 goals." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "44165348" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Kirstie Alora" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Kirstie Elaine Alora (born 29 November 1989) is a Filipina taekwondo practitioner. She represented the Philippines at the 2016 Summer Olympics after winning the silver medal at the Asian Olympic Qualifying Tournament. At the 2016 Summer Olympics, she was defeated by Maria Espinoza of Mexico in the round of 16. She was then defeated by Wiam Dislam of Morocco in the repechage. Alora was the flag bearer for the Philippines during the closing ceremony." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Filipina taekwondo practitioner" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Kirstie_Alora" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Kirstie Elaine Alora (born 29 November 1989) is a Filipina taekwondo practitioner. She represented the Philippines at the 2016 Summer Olympics after winning the silver medal at the Asian Olympic Qualifying Tournament. At the 2016 Summer Olympics, she was defeated by Maria Espinoza of Mexico in the round of 16. She was then defeated by Wiam Dislam of Morocco in the repechage. Alora was the flag bearer for the Philippines during the closing ceremony." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "28236552" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Abdul Rashid" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Lala Abdul Rashid (June 1, 1922 \u2013 March 8, 1989) was a member of Pakistan's gold medal winning 1960 Olympic field hockey team. He played as a goalkeeper throughout the tournament." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Field hockey player" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Lala_Abdul_Rashid" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Lala Abdul Rashid (June 1, 1922 \u2013 March 8, 1989) was a member of Pakistan's gold medal winning 1960 Olympic field hockey team. He played as a goalkeeper throughout the tournament." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "25306408" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Larry W. Hurtado" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Larry Hurtado (born 1943) is a New Testament scholar, historian of early Christianity and Emeritus Professor of New Testament Language, Literature and Theology at the University of Edinburgh, Scotland (Professor 1996-2011). He was the Head of the School of Divinity 2007-2010, and was until August 2011 Director of the Centre for the Study of Christian Origins, at the University of Edinburgh." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "American biblical scholar" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Larry_Hurtado" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Larry Hurtado (born 1943) is a New Testament scholar, historian of early Christianity and Emeritus Professor of New Testament Language, Literature and Theology at the University of Edinburgh, Scotland (Professor 1996-2011). He was the Head of the School of Divinity 2007-2010, and was until August 2011 Director of the Centre for the Study of Christian Origins, at the University of Edinburgh." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "39716720" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Luís Tinoco" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Luís Tinoco is a Portuguese composer who has achieved renown for works including the operas Evil Machines (2008) and Paint Me (2010), and the cantata Wanderings of the Solitary Dreamer (2011). He was born in Portugal on 16 July 1969." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Composer" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Luís_Tinoco" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Luís Tinoco is a Portuguese composer who has achieved renown for works including the operas Evil Machines (2008) and Paint Me (2010), and the cantata Wanderings of the Solitary Dreamer (2011). He was born in Portugal on 16 July 1969." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "40195274" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Marcus Lollius" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Marcus Lollius perhaps with the cognomen Paulinus (flourished second half of 1st century BC and first half of 1st century) was a Roman Senator who served as a consul." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Roman Senator" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Marcus_Lollius_(suffect_consul)" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Marcus Lollius perhaps with the cognomen Paulinus (flourished second half of 1st century BC and first half of 1st century) was a Roman Senator who served as a consul." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "50450361" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Category:Maximilien Van Haaster" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Maximilien van Haaster (born June 19, 1992) is a male foil fencer from Canada. He won the bronze medal at the 2013 Pan American Fencing Championships in Cartagena, and later competed at the 2015 Pan American Games, in Toronto. Van Haaster qualified to represent his country at the 2016 Summer Olympics, by being ranked in the top two in the Americas." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Canadian fencer" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Maximilien_van_Haaster" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Maximilien van Haaster (born June 19, 1992) is a male foil fencer from Canada. He won the bronze medal at the 2013 Pan American Fencing Championships in Cartagena, and later competed at the 2015 Pan American Games, in Toronto. Van Haaster qualified to represent his country at the 2016 Summer Olympics, by being ranked in the top two in the Americas." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "50033422" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Mohammed Al-Hakim" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Mohammed Al-Hakim (born 15 April 1985) is an Swedish-Iraqi football referee. Born in Irak, Al-Hakim moved to Sweden with his family when he was 8 years old and settled in Köping, where he still resides. He became a professional referee in 2008 and has been an Allsvenskan referee since 2012. Al-Hakim has refereed 66 matches in Allsvenskan and 39 matches in Superettan as of March 2016. In 2015, he also became a FIFA referee. Outside of football, he works part-time as an officer in the Swedish Armed Forces." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Swedish officer and association football referee" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Mohammed_Al-Hakim" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Mohammed Al-Hakim (born 15 April 1985) is an Swedish-Iraqi football referee. Born in Irak, Al-Hakim moved to Sweden with his family when he was 8 years old and settled in Köping, where he still resides. He became a professional referee in 2008 and has been an Allsvenskan referee since 2012. Al-Hakim has refereed 66 matches in Allsvenskan and 39 matches in Superettan as of March 2016. In 2015, he also became a FIFA referee. Al-Hakim received much praise from both football pundits and supporters during his officiating in the 2015 season. After the season he was selected as \"Referee of the year\" by the Svenska Fotbollförbundet and received a prize at the annual Fotbollsgalan. In August 2015, he was also noticed for his activities on social media, when he started a Facebook page where he openly answered questions regarding his own in-game-decisions. Al-Hakim later closed the profile, citing \"lack of time\" as the major cause. Outside of football, he works part-time as an officer in the Swedish Armed Forces." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "11521116" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Norman Borrett" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Norman Francis Borrett (1 October 1917 \u2013 10 December 2004) was a Cambridge hockey and squash Blue, an England and Great Britain field hockey player, a county cricketer, and an England and Great Britain squash player. Described in his obituary in The Times as \"arguably Britain's most talented post-war all-round amateur sportsman\" Norman Borrett was a pupil and later a schoolmaster at Framlingham College. The story of Norman Borrett can be found in the book Master Sportsman by Richard Sayer. This book is dedicated to Norman's widow, Mullie. He was born in Wanstead, London and died in Colchester." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Sportsman" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Norman_Borrett" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Norman Francis Borrett (1 October 1917 \u2013 10 December 2004) was a Cambridge hockey and squash Blue, an England and Great Britain field hockey player, a county cricketer, and an England and Great Britain squash player. Described in his obituary in The Times as \"arguably Britain's most talented post-war all-round amateur sportsman\" Norman Borrett was a pupil and later a schoolmaster at Framlingham College. The story of Norman Borrett can be found in the book Master Sportsman by Richard Sayer. This book is dedicated to Norman's widow, Mullie. He captained England 11 times in his 30 hockey internationals and at the 1948 Summer Olympics he captained the Great Britain field hockey team, which won the silver medal, playing in all five matches as inside-left and scoring 10 goals. He won the British Amateur Squash Championship in the first five years after the war, 1946,47,48,49 and 50, not losing a set in any of the finals. He played 11 times for England at squash, and captained in most of them. He played cricket for Essex three times (1939 and 1946) and for Devon 50 times (1947\u20131950). He was born in Wanstead, London and died in Colchester." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "44509937" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Olena Kravatska" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Olena Vitaliyivna Kravatska (Ukrainian: Олена Віталіївна Краватська; born 22 June 1992) is a Ukrainian sabre fencer. Competing in team events, she is the 2015 World silver medalist and 2016 Olympic silver medalist." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Ukrainian fencer" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Olena_Kravatska" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Olena Vitaliyivna Kravatska (Ukrainian: Олена Віталіївна Краватська; born 22 June 1992) is a Ukrainian sabre fencer. Competing in team events, she is the 2015 World silver medalist and 2016 Olympic silver medalist." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "14359375" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Philip Skell" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Philip S. Skell (December 30, 1918 \u2013 November 21, 2010) was an American chemist, emeritus Evan Pugh Professor at Pennsylvania State University, and from 1977 a member of the United States National Academy of Sciences." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Chemist" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Philip_Skell" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Philip S. Skell (December 30, 1918 \u2013 November 21, 2010) was an American chemist, emeritus Evan Pugh Professor at Pennsylvania State University, and from 1977 a member of the United States National Academy of Sciences." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "42842912" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "P. Moussette" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Pierre Moussette (8 September 1861 \u2013 10 February 1932) was a sailor from the France, who represented his native country at the 1900 Summer Olympics in Paris, France. Moussette took the 6th in the 2nd race of the 3 to 10 ton." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "French sailor" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Pierre_Moussette" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Pierre Moussette (8 September 1861 \u2013 10 February 1932) was a sailor from the France, who represented his native country at the 1900 Summer Olympics in Paris, France. Moussette took the 6th in the 2nd race of the 3 to 10 ton." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "51597284" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Piotr Kochanowski" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Piotr Kochanowski (1566-1620) was a Polish nobleman, poet and translator. He belonged to a family of writers. He was a son of Mikołaj Kochanowski and a nephew of Jan Kochanowski. He was born in 1566 in Sycyna. He is famous for his translations from Italian. He translated into Polish what were generally esteemed to be the two greatest modern epic poems: Ludovico Ariosto's Orlando furioso (Roland Enraged) and Torquato Tasso's Gerusalemme liberata (Jerusalem Delivered). His version of Tasso's poem served as the Polish national epic. Piotr Kochanowski was the second poet in Poland (after Sebastian Grabowiecki) to use ottava rima, which became very popular in Baroque Polish poetry. He died on 2 August 1620 and was buried at the Franciscan church in Cracow. He is commonly regarded as one of the " } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Wikimedia disambiguation page" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Piotr_Kochanowski" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Piotr Kochanowski (1566-1620) was a Polish nobleman, poet and translator. He belonged to a family of writers. He was a son of Mikołaj Kochanowski and a nephew of Jan Kochanowski. He was born in 1566 in Sycyna. He is famous for his translations from Italian. He translated into Polish what were generally esteemed to be the two greatest modern epic poems: Ludovico Ariosto's Orlando furioso (Roland Enraged) and Torquato Tasso's Gerusalemme liberata (Jerusalem Delivered). His version of Tasso's poem served as the Polish national epic. Piotr Kochanowski was the second poet in Poland (after Sebastian Grabowiecki) to use ottava rima, which became very popular in Baroque Polish poetry. He died on 2 August 1620 and was buried at the Franciscan church in Cracow. He is commonly regarded as one of the most important Polish writers of the Renaissance." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "11521877" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Robin Lindsay" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Lieutenant-Colonel Frederick Robert Lindsay MC, DSO (11 January 1914 \u2013 6 April 2011) was a British field hockey player who competed in the 1948 Summer Olympics. Lindsay was born in Delhi, where his father was a civil engineer for the Indian government, and was educated at St Joseph's College in Darjeeling. He arrived in England in 1933 and enlisted in the King's Royal Rifle Corps. In 1937 he entered RMC Sandhurst, where he played hockey for the Army and Scotland." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Field hockey player" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Robin_Lindsay" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Lieutenant-Colonel Frederick Robert Lindsay MC, DSO (11 January 1914 \u2013 6 April 2011) was a British field hockey player who competed in the 1948 Summer Olympics. Lindsay was born in Delhi, where his father was a civil engineer for the Indian government, and was educated at St Joseph's College in Darjeeling. He arrived in England in 1933 and enlisted in the King's Royal Rifle Corps. In 1937 he entered RMC Sandhurst, where he played hockey for the Army and Scotland. Lindsay was commissioned into the Royal Tank Corps and served in North Africa during the Second World War, winning the Military Cross and the DSO. He then saw action during the Invasion of Sicily in July 1943. In 1950 he returned to India as an instructor at the Indian Military Staff College in Wellington, south India (now the Defense Services Staff College (DSSC). He was a member of the British field hockey team, which won the silver medal. He played all five matches as halfback. The British team lost to India, the country where Lindsay had learned the game." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "36960806" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Simon Lee Evans" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Simon Lee Evans (born 13 October 1975) is a Welsh international referee. Evans became a FIFA referee in 2004. He has refereed at 2010 and 2014 FIFA World Cup qualifiers." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "football referee" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Simon_Lee_Evans" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Simon Lee Evans (born 13 October 1975) is a Welsh international referee. Evans became a FIFA referee in 2004. He has refereed at 2010 and 2014 FIFA World Cup qualifiers." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "28365837" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Sybil Fane, Countess of Westmorland" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Sybil Fane, Countess of Westmorland (20 August 1871 \u2013 21 July 1910), born Lady Sybil Mary St Clair-Erskine, was a British aristocrat and socialite." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "British countess" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Sybil_Fane,_Countess_of_Westmorland" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Sybil Fane, Countess of Westmorland (20 August 1871 \u2013 21 July 1910), born Lady Sybil Mary St Clair-Erskine, was a British aristocrat and socialite." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "49989398" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Tamirat Tola" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Tamirat Tola Abera (born 11 August 1991) is a Ethiopian long-distance runner who competes in cross country running and road running. He was a team medallist for Ethiopia at the 2015 IAAF World Cross Country Championships and 2016 IAAF World Half Marathon Championships, having had top six finishes." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Ethiopian athletics competitor" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Tamirat_Tola" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Tamirat Tola Abera (born 11 August 1991) is a Ethiopian long-distance runner who competes in cross country running and road running. He was a team medallist for Ethiopia at the 2015 IAAF World Cross Country Championships and 2016 IAAF World Half Marathon Championships, having had top six finishes." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "13608586" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Tibor Resznecki" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Tibor Resznecki is a former U.S. soccer defender who earned three caps with the U.S. national team in 1965." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "American soccer player" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Tibor_Resznecki" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Tibor Resznecki is a former U.S. soccer defender who earned three caps with the U.S. national team in 1965." }
+      } ,
+      {
+        "_wikiPageID": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "51309271" } ,
+        "_name": { "type": "literal" , "xml:lang": "en" , "value": "Yémi Apithy" } ,
+        "_comment": { "type": "literal" , "xml:lang": "en" , "value": "Yémi Geoffrey Apithy (b. 5 April 1989) is a French-Beninese sabre fencer representing Benin in international competitions, silver medalist at the 2014 and 2015 African Championships. He bore the flag for Benin at the 2016 Summer Olympics." } ,
+        "_description": { "type": "literal" , "xml:lang": "en" , "value": "Beninese fencer" } ,
+        "Person": { "type": "uri" , "value": "http://dbpedia.org/resource/Yémi_Apithy" } ,
+        "_abstract": { "type": "literal" , "xml:lang": "en" , "value": "Yémi Geoffrey Apithy (b. 5 April 1989) is a French-Beninese sabre fencer representing Benin in international competitions, silver medalist at the 2014 and 2015 African Championships. He bore the flag for Benin at the 2016 Summer Olympics." }
+      }
+    ]
+  }
+}

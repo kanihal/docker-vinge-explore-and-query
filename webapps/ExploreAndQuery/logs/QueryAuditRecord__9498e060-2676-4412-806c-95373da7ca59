@@ -1,0 +1,13 @@
+<http://owl.semdw.com/audit#QueryAuditRecord__9498e060-2676-4412-806c-95373da7ca59> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://owl.semdw.com/audit#QueryAuditRecord> . 
+<http://owl.semdw.com/audit#QueryAuditRecord__9498e060-2676-4412-806c-95373da7ca59> <http://owl.semdw.com/audit#userName> "user1"^^xsd:string . 
+<http://owl.semdw.com/audit#QueryAuditRecord__9498e060-2676-4412-806c-95373da7ca59> <http://owl.semdw.com/audit#queryType> <http://owl.semdw.com/audit#QueryType__Select> . 
+<http://owl.semdw.com/audit#QueryAuditRecord__9498e060-2676-4412-806c-95373da7ca59> <http://owl.semdw.com/audit#start_time> "2018-04-10T20:14:32"^^<http://www.w3.org/2001/XMLSchema#dateTime> . 
+<http://owl.semdw.com/audit#QueryAuditRecord__9498e060-2676-4412-806c-95373da7ca59> <http://owl.semdw.com/audit#queryText> "SELECT DISTINCT ?Rank ?s as ?Subject ?p as ?Property ?o as ?Object ?g as ?named_graph\nWHERE\n{\nGRAPH ?g\n{\n?s ?p ?o .\n?o bif:contains 'narendra AND modi' OPTION (score ?Rank) .\n}\n}\nORDER BY DESC(?Rank)\nLIMIT 100 \n"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://owl.semdw.com/audit#QueryAuditRecord__9498e060-2676-4412-806c-95373da7ca59> <http://owl.semdw.com/audit#resultFormat> "text/html"^^xsd:string . 
+<http://owl.semdw.com/audit#QueryAuditRecord__9498e060-2676-4412-806c-95373da7ca59> <http://owl.semdw.com/audit#userTimeoutParam> "-1"^^<http://www.w3.org/2001/XMLSchema#integer> . 
+<http://owl.semdw.com/audit#QueryAuditRecord__9498e060-2676-4412-806c-95373da7ca59> <http://owl.semdw.com/audit#isSuccessful> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> . 
+<http://owl.semdw.com/audit#QueryAuditRecord__9498e060-2676-4412-806c-95373da7ca59> <http://owl.semdw.com/audit#isTimeout> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> . 
+<http://owl.semdw.com/audit#QueryAuditRecord__9498e060-2676-4412-806c-95373da7ca59> <http://owl.semdw.com/audit#isUserAbort> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> . 
+<http://owl.semdw.com/audit#QueryAuditRecord__9498e060-2676-4412-806c-95373da7ca59> <http://owl.semdw.com/audit#executionTime> "0"^^<http://www.w3.org/2001/XMLSchema#integer> . 
+<http://owl.semdw.com/audit#QueryAuditRecord__9498e060-2676-4412-806c-95373da7ca59> <http://owl.semdw.com/audit#resultsReadyTime> "1"^^<http://www.w3.org/2001/XMLSchema#integer> . 
+<http://owl.semdw.com/audit#QueryAuditRecord__9498e060-2676-4412-806c-95373da7ca59> <http://owl.semdw.com/audit#numResultRows> "101"^^<http://www.w3.org/2001/XMLSchema#integer> .

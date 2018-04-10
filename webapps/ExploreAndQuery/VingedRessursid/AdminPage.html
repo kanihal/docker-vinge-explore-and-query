@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Dat-a-MazeHouse - Explore & Query of public SPARQL endpoints</title>
+        <meta name="description" content="Explore & Query of public SPARQL endpoints">
+        <meta name="viewport" content="width=device-width">
+
+		<link rel="shortcut icon" href="logo.ico">
+		
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/main.css">		
+		<script src="JScript/Shared.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		
+		<style type="text/css">a {text-decoration: none}</style>
+    </head>
+    <body onload="checkBrowser('browser')">
+		<br>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!------------------------------ HTML start  ---------------------------------------------Add your site or application content here -->
+
+		<div id="outer-container">
+			_TOOLBAR_
+			<br>
+			<div id="tools" style="color:#66CCFF;font-size:3px;>.</div>
+			<div align="left" >
+				<span style="font-family: Georgia, Times New Roman, Times, serif; font-size: 16px; color:#771414;"></span>
+				<span style="color:black; font-family:Verdana; font-size:medium; ">_CURRENT_USER_ _CURRENT_ENDPOINT_<a href="logout">_LOGOUT_</a></span>
+			</div>			
+		</div>
+
+		<div>
+		 <div  id="container">
+					    <table><tbody>
+			<tr>
+			<td width="600" valign="top">
+
+			<span style="color:gray; font-family:Verdana; font-size:medium; ">Beta version</span><br>
+			<span style="color:gray; font-family:Verdana; font-size:small; ">revision 493</span>
+			<h2>Explore & Query</h2>
+			<!--img src="img/swepub_banner.png" height="60"/-->
+			<div id="help_text-container1" >
+			<span style="font-family:Verdana; font-size:medium; ">the method to explore and reveal linked data graphs ;
+			<br>build, visualize and execute SPARQL queries</span><br>
+			</div>
+			</td>
+			<td valign="top">
+			<iframe src="http://www.slideshare.net/slideshow/embed_code/26228067" width="192" height="144" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen>
+			</iframe>
+			</td>
+			
+			<td valign="top">
+			<span style="color:brown; font-family:Verdana; font-size:12px; ">DBpedia search</span><br>
+			<a href="http://www.youtube.com/watch?v=lmmJISXkNP0&feature=youtu.be" title="YouTube video">
+				<img width="160" height="120" src="http://i1.ytimg.com/vi/lmmJISXkNP0/mqdefault.jpg?v=5215cbbe" alt="YouTube video thumbnail"/>			
+			</a>
+			<br><br>
+			
+			<div id="help_text-container1" >
+			<span style="font-family:Verdana; font-size:medium; ">Please watch the video above and it will be clear how to get going with Explore & Query in the Web of Data 
+			without learning SPARQL and studying the data model</span>
+			</div>
+			</td>
+			
+			</tr>
+			</tbody><table>
+			
+			<hr />
+			
+			<fieldset>
+			<table><tbody>
+			<tr>
+			<td width="600" valign="top">
+			<form action="login/creds" method="post">
+				<label>Anonymus login to system as:</label>
+				<select name="user">
+					<option value="user1">user1</option>
+					<option value="user2">user2</option>
+					<option value="user3">user3</option>
+					<option value="user4">user4</option>
+					<option value="user5">user5</option>
+				</select>
+	
+				<div><input hidden type="text" name="pw" value="guest" />
+				<div><label for="jdbc">Select SPARQL endpoint:</label>
+				<select name="provider" >
+				_SERVER_LIST_
+				</select>
+				<br>
+			    or insert URI
+				<input name="endpointURI" size="50"></input>
+				<label for="login"></label><br>
+				_LOGIN_BUTTON_
+				</div>
+				</fieldset>			
+				<br>
+			</form>
+			<!--Or as registered user of SwePub Analysis/LibrisXL data sets-->
+			<!--form action="login/creds" method="post">
+				<label>Login to system as:</label>
+				
+				<div><input type="text" name="user"/>
+				<div><input type="password" name="pw"/>
+				<!--div><input hidden type="text" name="provider" value="hp07.libris.kb.se:1111 Virtuoso" /-->
+				<div><input hidden type="text" name="provider" value="localhost:1111 Virtuoso" />
+				<!--a href="AccountRegister.html"><span style="color:blue; font-family:Verdana; font-weight:normal;font-size:small; ">(Register and create your account)</span></a-->
+				<label for="login"></label><br>
+				<!--_LOGIN_BUTTON_-->
+			</form-->
+			<br>
+			<!--form action="select/project" method="post">
+				<legend>What Analysis Project are you working on?</legend>
+				<select name="project" id="project">	
+				_ANALYSIS_PROJECT_
+				</select>
+				<button type="submit" id="login" class="button_2">Select</button>
+			</form-->
+			
+			</td>
+			
+			<td width="1000" valign="top">
+			<div id="help_text-container2" >
+			<span style="color:brown; font-family:Verdana; font-size:medium; ">The GUI works best in Chrome and Safari browsers 
+			in 1920 x 1080/1200 screen resolution</span>
+			<span style="color:orange; font-family:Verdana; font-size:medium; " id="browser" onload="checkBrowser('browser')"></span>
+			<br>
+			<span style="color:brown; font-family:Verdana; font-size:large; ">
+			This SPARQL endpoint front-end is built on Dat-a-Mazehouse framework and utilizes the <a href="http://www.vingefree.com/solutions">Agile Analytics method </a> of Vinge. 
+			</span>
+			<br><br>
+				<span style="font-family:Verdana; font-size:medium; "><a style="color:gray;" target="_blank" href="http://vingefree.freeforums.org/index.php">Technical Support</span></a>
+						
+			</td>
+			</div>
+			
+			</tr>
+			
+			</tbody><table>
+ 			<footer>				
+				<hr>
+				<span style="color:darkgray; font-family:Verdana; font-size:medium; ">provisioned by</span><br>				
+				<a href="http://www.vingefree.se"><img src="logo.png" width="200"/></a>	
+				<br><br>							
+				<a href="../ExploreAndQuery/licenses.html"><span style="color:gray; font-family:Verdana; font-size:medium; ">Free software licenses information</span></a>
+				<p align="right"> &#169; 2014 Vinge Free AB, Sweden</p>
+				<!--img src="tomcat.jpg" width="80"/-->
+			</footer>
+		
+		</div>
+		</div> <!--! end of #container -->
+		<!-----------------------------  HTML end -------------------------------------------------------------->
+
+    </body>
+</html>

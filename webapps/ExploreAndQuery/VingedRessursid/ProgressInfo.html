@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="refresh" content="59">
+
+<link rel="stylesheet" href="css/style.css">
+<script src="JScript/Shared.js"></script>
+<script src="JScript/Countdown.js"></script>
+
+
+
+</head>
+<body onload="init();StartTimer()" onunload="StopTimer();">
+		
+	<div id="container">		
+	
+		<table>
+			<tr style="font-family:Verdana; font-size:small; font-weight:normal; ">
+			<td>The page will auto refresh in</td>
+			<td><div class="anzeige" id="Anzeige" style="family:Verdana; font-weight:bold; ">59</div></td>
+			<td>seconds</td>
+			</tr>
+		</table>
+		<br>
+		<!--span style="font-family:Verdana; font-size:small; font-weight:bold; ">Progress Info</span-->
+		<legend>Query Execution Progress</legend>
+		<br>
+		
+		<span style="font-family:Verdana; font-size:small; font-weight:normal; ">_PROGRESS_INFO_</span>
+		<br><br>
+		<legend>Data Export Status</legend>
+		<br>
+		<span style="font-family:Verdana; font-size:small; font-weight:normal; ">_EXPORT_STATUS_</span>
+		<br><br>
+		<legend>Full Entailment Status</legend>
+		<textarea id="entailstatus" cols="160" rows="12" span style="background-color:white; font-family:Verdana; font-size:small;" onmouseover="moveCursorToEnd(this)">_ENTAILMENT_STATUS_</textarea>
+		<br>
+		<legend>Source Data Load Status</legend> 
+		<textarea id="loadstatus"  cols="160" rows="12" span style="background-color:white; font-family:Verdana; font-size:small;" onmouseover="moveCursorToEnd(this)">_SOURCE_LOAD_STATUS_</textarea>		
+	</div>
+	
+	<form hidden action="javascript:;">
+	<input name="hr" type="text" id="hr" value="0" size="2" maxlength="2" onchange="ResetTimer();"/> h
+	<input name="min" type="text" id="min" value="0" size="2" maxlength="3" onchange="ResetTimer();"/> m
+	<input name="sec" type="text" id="sec" value="59" size="2" maxlength="3" onchange="ResetTimer();"/> s	
+	<input class="button" name="start" type="button" id="start" value="Start" onclick="StartTimer();" />
+	</form>
+	
+</body>
+</html>

@@ -1,0 +1,9 @@
+#Get raw concepts in this DW and named graphs they are defined and number of instances
+SELECT DISTINCT ?Concept (count(?thing) as ?num_things)
+WHERE 
+{ 
+#?Concept a owl:Class .
+#?Concept a rdfs:Class .
+?thing a ?Concept .
+}
+GROUP BY ?Concept 

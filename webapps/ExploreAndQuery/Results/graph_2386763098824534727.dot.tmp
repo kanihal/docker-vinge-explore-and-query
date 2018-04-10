@@ -1,0 +1,6 @@
+digraph G {
+rankdir=LR;
+graph [ charset="UTF-8", fontname=Helvetica, fontsize=10, splines=true ];
+node [ fontname=Verdana, fontsize=9, overlap=false, height=0.35 ];
+edge [ fontname=Verdana, fontsize=8, arrowhead=vee, arrowsize=0.5 ];
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Dat-a-MazeHouse</title>
+
+ 		<link rel="shortcut icon" href="logo.ico">
+
+		<link rel="stylesheet" href="css/style.css">
+
+		<script src="JScript/Shared.js"></script>
+		
+		<!-- For Editor Controller -->
+		<script src="js/codemirror.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/sparql_colors.js"></script>
+
+		<script src="js/show-hint.js"></script>
+		<script src="js/spar-hint.js"></script>
+		
+		<!--  Sgvizler stuff to get graph types dropdown -->
+
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript" id="sgvzlr_script" src="http://sgvizler.googlecode.com/svn/release/0.5/sgvizler.js"></script>
+		
+		
+		<link href="css/show-hint.css" rel="stylesheet" >
+
+		<link  href="css/codemirror.css" rel="stylesheet">
+		<!--link  href="css/doc.css" rel="stylesheet"-->
+		<link  href="css/sparqlcolors.css"/ rel="stylesheet" >
+
+		<script language="JavaScript">
+			window.onbeforeunload = confirmExit;
+			function confirmExit()
+			{
+				var sparql = editor.getValue();	
+				if( SPARQL.query.value != sparql)
+					return "The query is edited after last action. If you leave the page the changes get lost. You can save it to local file (Save Query button), or temporarily in a session cache by visualizing or running the query. Are you sure you want to leave this page?";
+			}
+			
+			$(document).ready(sgvizler.go());
+		</script>
+		<script>
+			function toggleChartTypeSection(id){
+				var eSelect = document.getElementById(id);
+				//alert(eSelect.selectedIndex);
+				if(eSelect.selectedIndex == 1){
+					//changeVisibility('sgvzlr_optChart', true)	
+					document.getElementById('sgvzlr_optChart').hidden=false;
+				}
+				else{
+					//changeVisibility('sgvzlr_optChart', false);
+					document.getElementById('sgvzlr_optChart').hidden=true;
+					//document.getElementById('resultsets').selectedIndex=0;
+					//document.getElementById('new_name').value = "";
+					//document.getElementById('VisualizeJoins').disabled=true;
+				}
+				
+				return false;
+			}
+			
+			function setFormTarget(){
+				
+				if(document.getElementById('newtab').checked)
+					document.getElementById('SPARQL').target='_blank';
+				else
+					document.getElementById('SPARQL').target='_top';
+				return false;
+			}
+		</script>
+    </head>
+    <body onload="toggleChartTypeSection('format')">
+		<br>
+			<div id="outer-container">
+			_TOOLBAR_
+			<br>
+			<div id="tools">
+
+			<input id="Visualize" onclick="visualize('explorequery','withtable')" type="button" class="button_2" value="Visualize Query" title="Show a graph diagram that represents the query currently in the editor"><input type="checkbox" id = "withtable"><span style="font-family:Verdana; font-size:small; ">with table</span></input></input>	
+			<!--input id="visualizeNav" onclick="visualizeNav()" type="button" class="button_2" value="Navigation Map" title="Show a graph diagram that represents your navigation path in Linked Data Browser since last Run Query"></input-->
+			<input id="Generate" onclick="generateSPARQL()" type="button" class="button_2" value="Generate Query" title="Generates SPARQL query based on your latest Linked Data Navigation history"/>
+			<input id="SaveQuery" onclick="SaveQuery()" type="button" class="button_2" value="Save Query" title="Save the query text in file for later reuse"/>
+			<!--input id="saveNav" onclick="saveNav()" type="button" class="button_2" value="Save Navigation Map" title="Save the navigation map which can be reloaded later"></input>			
+			<input id="resetNav" onclick="resetNav()" type="button" class="button_2" value="Reset Navigation Map" title="Reset the navigation map graph"></--> 
+			</div>				
+		</div>
+		<br>
+
+        <!------------------------------ HTML start  ---------------------------------------------Add your site or application content here -->
+				
+			<div id="container">	
+			
+			<span>FORM_START</span>
+			<input name=origin type="hidden" value=explorequery></input>
+			<input id="Query" type="submit" class="button_1" value="Run Query"  title="Execeute the query in editor to the selected outpiut format"></input>			
+			<!--span>Result Format</span><span>RESULT_FORMAT </span--> 		
+			<input type="checkbox" name = "newtab" id = "newtab" onClick="setFormTarget()"><span style="padding:5px" >New Tab</span></input>
+			<span style="padding:25px">Time out after TIME_OUT_VAL seconds</span>
+			<span style="font-family:Verdana; font-size:medium; ">Output:</span>
+			<select name="format" id="format" onchange="toggleChartTypeSection('format')">
+				<option value="text/html">Linked Data Browser</option>
+				<option value="sgvizler">Sgvizler - Google Charts</option>
+				<!--option value="spotfire">Spotfire Table and Filters</option-->
+				<!--option value="spotfireweb">Spotfire Web Player</option-->
+				<option value="CSV">CSV file</option>
+				<option value="JSON">JSON file</option>
+				<option value="NQUADS">NQUADS file</option>
+			</select>	
+			<select name="chart" id="sgvzlr_optChart"></select>
+			
+			<a href="AbortQuery"><span style="color:#c0004b; font-family:Verdana; font-size:small; padding:25px">Abort long running query!</span></a>	
+			<br>
+			<br>
+			<div style="color:blue; font-family:Verdana; font-size:medium; ">
+			<a id="show_prefixes" href="javascript:toggle( 'show_prefixes','user_profile', 'Show Prefixes', 'Hide Prefixes' );">
+			<span >Show Prefixes</span></a>
+			<a href="Explain/SparqlEditor.html" target=\"_blank\"><span style="color:brown; font-family:Verdana; font-size:medium; ">? Editor Usage</span></a>	
+			<a id="sgvizler_guide" href="https://code.google.com/p/sgvizler/wiki/DesigningQueries" target=\"_blank\"><span style="color:brown; font-family:Verdana; font-size:medium; padding:25px">Sgvizler query design guide</span></a>
+			</div>
+			<div id="user_profile" style="display: none">USER_PROFILE</div>
+							
+			<table height="500">
+				<tbody>
+					<tr>
+						<td width="1300">
+							<textarea id="code" name="query" style="display: none" >DEF_QUERY</textarea>							
+						</td>
+						<td/><td/>
+						<td valign="top">
+							<!--span style="font-family:Verdana; font-size:medium; ">USER_PROFILE</span-->
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<span>FORM_END</span>
+			
+			<table><tbody><tr>
+			<span style="font-family:Verdana; font-size:small; ">Load query from local file:</span>FILE_LOAD
+			<span style="font-family:Verdana; font-size:small; padding:15px"></span>
+			<select selected name="template_list" id="template_list" >	
+				<option value="not_selected" title="SPARQL query template">Select SPARQL query template..</option>
+				_TEMPLATE_LIST_
+			</select>			
+			<button id="load_template="submit" title="Load selected SPARQL query template" onclick="loadQuery('template_list');">Load to Editor</button>
+
+			<span style="font-family:Verdana; font-size:small; padding:15px"></span>
+			<select selected name="history_list" id="history_list" >	
+				<option value="not_selected" title="Select the query from History list">History..</option>
+				_HISTORY_LIST_
+			</select>			
+			<button id="load_from_history="submit" title="Load SPARQL query from history list" onclick="loadQuery('history_list');">Load to Editor</button>
+			
+			</tr></tbody></table>
+			
+			
+			<footer>
+				<hr/>
+				<br>
+				<img align="left" src="Vinge3.png" height="60"/>
+				<br>
+				<p align="right">&#169; 2014 Vinge Free AB, Sweden</p>
+				
+			</footer>
+			
+		</div>
+		<!-----------------------------  HTML end -------------------------------------------------------------->
+		<script src="js/EC.js"></script>
+
+    </body>
+</html>

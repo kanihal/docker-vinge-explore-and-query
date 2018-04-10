@@ -1,0 +1,51 @@
+digraph G {
+graph [ size="20,200", fontname=Helvetica, fontsize=9,style="rounded", color="lightgray", smoothing="none", nodesep=0.25, splines=true ];
+node [ fontname=Verdana, fontsize=10, overlap=false, color="gray"];
+edge [ fontname=Arial, fontsize=10, color="lightgray", fillcolor="lightgray", weight=2., len=0.5, penwidth=1.25 ];
+subgraph cluster_query_new_query0 {
+color="lightgray";
+subgraph cluster_columns_0 {
+label="Columns";
+color="lightgray";
+node [shape=record];
+struct_cols_0 [label="<_wikiPageID_0> _wikiPageID|<_name_0> _name|<_comment_0> _comment|<_description_0> _description|<Person_0> Person|<_abstract_0> _abstract", fontsize=9, height=0.3, style="filled", fillcolor="lightgray", color="gray"];
+
+}
+struct_cols_0:_wikiPageID_0 -> __wikiPageID_0[label="ref", color="green", fillcolor="green", penwidth=0.25 ];
+__wikiPageID_0[label="?_wikiPageID", style="filled", fontcolor="white", fillcolor="#4c88e8", color="gray"];
+struct_cols_0:_name_0 -> __name_0[label="ref", color="green", fillcolor="green", penwidth=0.25 ];
+__name_0[label="?_name", style="filled", fontcolor="white", fillcolor="#4c88e8", color="gray"];
+struct_cols_0:_comment_0 -> __comment_0[label="ref", color="green", fillcolor="green", penwidth=0.25 ];
+__comment_0[label="?_comment", style="filled", fontcolor="white", fillcolor="#4c88e8", color="gray"];
+struct_cols_0:_description_0 -> __description_0[label="ref", color="green", fillcolor="green", penwidth=0.25 ];
+__description_0[label="?_description", style="filled", fontcolor="white", fillcolor="#4c88e8", color="gray"];
+struct_cols_0:Person_0 -> _Person_0[label="ref", color="green", fillcolor="green", penwidth=0.25 ];
+_Person_0[label="?Person", style="filled", fontcolor="white", fillcolor="#4c88e8", color="gray"];
+struct_cols_0:_abstract_0 -> __abstract_0[label="ref", color="green", fillcolor="green", penwidth=0.25 ];
+__abstract_0[label="?_abstract", style="filled", fontcolor="white", fillcolor="#4c88e8", color="gray"];
+_Person_0 [label="?Person", style="filled", fillcolor="#4c88e8", color="gray" fontcolor="white"];
+dbp_m_Person_0 [label="dbp_m:Person"];
+_Person_0 -> dbp_m_Person_0[label="rdf:type"];
+__name_0 [label="?_name", style="filled", fillcolor="#4c88e8", color="gray" fontcolor="white" ];
+_Person_0 -> __name_0[label="foaf:name"];
+__abstract_0 [label="?_abstract", style="filled", fillcolor="#4c88e8", color="gray" fontcolor="white" ];
+_Person_0 -> __abstract_0[label="dbp m:abstract"];
+subgraph cluster_optional_0_5 {
+__comment_0 [label="?_comment", style="filled", fillcolor="#4c88e8", color="gray" fontcolor="white" ];
+_Person_0 -> __comment_0[label="rdfs:comment"];
+FILTER_0_9[label="FILTER", fixedsize=true, height=0.2, shape=invtrapezium, style="filled", fontsize=8, fillcolor="#F2F2F2", color="gray"];
+FILTER_0_9 -> __comment_0;
+__wikiPageID_0 [label="?_wikiPageID", style="filled", fillcolor="#4c88e8", color="gray" fontcolor="white" ];
+_Person_0 -> __wikiPageID_0[label="dbp
+m:wikiPageID"];
+__description_0 [label="?_description", style="filled", fillcolor="#4c88e8", color="gray" fontcolor="white" ];
+_Person_0 -> __description_0[label="terms:description"];
+FILTER_0_12[label="FILTER", fixedsize=true, height=0.2, shape=invtrapezium, style="filled", fontsize=8, fillcolor="#F2F2F2", color="gray"];
+FILTER_0_12 -> __description_0;
+label="OPTIONAL";
+color="yellow";
+}
+FILTER_0_15[label="FILTER", fixedsize=true, height=0.2, shape=invtrapezium, style="filled", fontsize=8, fillcolor="#F2F2F2", color="gray"];
+FILTER_0_15 -> __abstract_0;
+}
+}

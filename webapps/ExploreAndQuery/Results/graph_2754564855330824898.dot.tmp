@@ -1,0 +1,8 @@
+digraph G {
+graph [ charset="UTF-8", fontname=Helvetica, fontsize=10, splines=true ];
+node [ fontname=Verdana, fontsize=9, overlap=false, height=0.35 ];
+edge [ fontname=Verdana, fontsize=8, arrowhead=vee, arrowsize=0.5 ];
+a_Personhttpdbpediaorgresource [label="a Person", style="filled,rounded", shape="box", color="gray", fillcolor="green" fontcolor="white", penwidth=0.5 , URL="../describe?uri=http://dbpedia.org/resource/Narendra_Modi&amp;p=http://www.w3.org/1999/02/22-rdf-syntax-ns%23type", target="_top"]
+httpxmlnscomfoaf01Person[id="httpxmlnscomfoaf01Person", label="Person", style="filled,rounded", shape="ellipse", color="gray", fillcolor="white" fontcolor="green", penwidth=0.5 , URL="../describe?uri=http://xmlns.com/foaf/0.1/Person&amp;p=http://www.w3.org/1999/02/22-rdf-syntax-ns%23type", target="_top"]
+a_Personhttpdbpediaorgresource -> httpxmlnscomfoaf01Person[label="type", style="filled", color="black", fillcolor="gray" fontcolor="brown", penwidth=0.2, URL="../select/navmapedgeremove?index=0", target="_top"]
+}

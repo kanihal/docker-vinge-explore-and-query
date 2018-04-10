@@ -1,0 +1,13 @@
+#Get raw concepts in this DW and data sources they come from
+SELECT DISTINCT ?Concept ?Datasource
+WHERE 
+{ 
+GRAPH ?g
+{ 
+?Concept a owl:Class .
+} 
+?Datasource a admin:DataSource .
+?Datasource admin:graphTBox ?tboxgraph .
+FILTER (xsd:string(?g) = xsd:string(?tboxgraph) )
+}
+ORDER BY ?Concept

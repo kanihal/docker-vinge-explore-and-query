@@ -1,0 +1,11 @@
+digraph G {
+graph [ size="20,200", fontname=Helvetica, fontsize=9,style="rounded", color="lightgray", smoothing="none", nodesep=0.25, splines=true ];
+node [ fontname=Verdana, fontsize=10, overlap=false, color="gray"];
+edge [ fontname=Arial, fontsize=10, color="lightgray", fillcolor="lightgray", weight=2., len=0.5, penwidth=1.25 ];
+subgraph cluster_query_new_query0 {
+color="lightgray";
+_thing_0 [label="?thing", style="filled", fillcolor="#4c88e8", color="gray" fontcolor="white"];
+_Concept_0 [label="?Concept", style="filled", fillcolor="#4c88e8", color="gray" fontcolor="white" ];
+_thing_0 -> _Concept_0[label="rdf:type"];
+}
+}

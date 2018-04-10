@@ -1,0 +1,148 @@
+x§<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+    <description>Semantic Search by Explore and Query</description>
+    <display-name>Semantic Search by Explore and Query</display-name>
+
+    <!-- Define servlets that are included in the web application -->
+     
+	 <servlet>
+	    <servlet-name>EQServlet</servlet-name>
+	    <servlet-class>com.EQ.servlets.EQServlet</servlet-class>
+
+		<init-param> 
+			<param-name >audit_conn</param-name > 
+			<param-value >off</param-value > 
+		</init-param> 
+		
+		<init-param> 
+			<param-name >odbc_conn</param-name > 
+			<param-value >54.217.235.137:1111</param-value > 
+		</init-param> 	
+			
+		<init-param > 
+			<param-name >rootURI</param-name > 
+			<param-value >http://dmh.vingefree.com:8080/EQ</param-value > 
+		</init-param >  
+
+		<init-param > 
+			<param-name >downloadURI</param-name > 
+			<param-value >http://dmh.vingefree.com:8080/Export</param-value > 
+		</init-param >  
+		
+		<init-param > 
+			<param-name >log4j-init-file</param-name > 
+			<param-value >/opt/Apache/apache-tomcat-7.0.37/webapps/EQ/WEB-INF/log4j.lcf</param-value > 
+		</init-param >  
+
+		<init-param > 
+			<param-name >loginURI</param-name > 
+			<param-value >http://dmh.vingefree.com:8080/EQ/AdminPage</param-value > 
+		</init-param >  
+	
+		<init-param > 
+			<param-name >resourceDir</param-name > 
+			<param-value >/opt/Apache/apache-tomcat-7.0.37/webapps/EQ/VingedRessursid/</param-value > 
+		</init-param >  		
+		<init-param > 
+			<param-name >resultsDir</param-name > 
+			<param-value >/vol/ebs/QueryResults/</param-value > 
+		</init-param >  		
+		<init-param > 
+			<param-name >exportDir</param-name > 
+			<param-value >/vol/ebs/Export/</param-value > 
+		</init-param >  		
+		
+		<init-param > 
+			<param-name >logsDir</param-name > 
+			<param-value >/vol/ebs/Audit/</param-value > 
+		</init-param >  	
+				
+		<init-param > 
+			<param-name >maxthreads</param-name > 
+			<param-value >2</param-value > 
+		</init-param >  
+		
+		<init-param > 
+			<param-name >GraphVizDOT</param-name> 
+			<param-value >/usr/bin/dot</param-value > 
+		</init-param >  		
+			
+		<init-param > 
+			<param-name >staging_root</param-name> 
+			<param-value >/vol/ebs/Staging/</param-value > 
+		</init-param >  	
+		
+		<init-param > 
+			<param-name >wepapproot_root</param-name> 
+			<param-value >/opt/Apache/apache-tomcat-7.0.37/webapps/EQ/</param-value > 
+		</init-param >  	
+		
+		<init-param> 
+			<param-name >system_type</param-name> 
+			<param-value>demo</param-value > 
+		</init-param>  	
+		<init-param> 
+			<param-name >max_users</param-name> 
+			<param-value>10</param-value > 
+		</init-param>  	
+				
+		<init-param> 
+			<param-name >max_suggestions</param-name> 
+			<param-value>2000</param-value >
+		</init-param>  	
+						
+	  </servlet>
+	
+	  <servlet-mapping>
+	    <servlet-name>EQServlet</servlet-name>
+	    <url-pattern>/AdminPage/*</url-pattern>
+	    <url-pattern>/login/*</url-pattern>
+	    <url-pattern>/logout/*</url-pattern>
+	    <url-pattern>/sparql/*</url-pattern>
+	    <url-pattern>/search/*</url-pattern>
+	    <url-pattern>/save/*</url-pattern>
+	    <url-pattern>/describe/*</url-pattern>
+	    <url-pattern>/NextPage/*</url-pattern>
+	    <url-pattern>/visualize/*</url-pattern>
+	    <url-pattern>/getNavMapMatches/*</url-pattern>	 
+	    <url-pattern>/getNavMapMatchesCount</url-pattern>	   
+	    <url-pattern>/GenerateSPARQL/*</url-pattern>
+	    <url-pattern>/SimpleSearchPage/*</url-pattern>
+	    <url-pattern>/ExploreDataPage/*</url-pattern>
+	    <url-pattern>/FeedAnalyticsPage/*</url-pattern>
+	    <url-pattern>/AbortQuery/*</url-pattern>
+	    <url-pattern>/getSuggestionList/*</url-pattern>	    
+	    <url-pattern>/image/*</url-pattern>	   
+	    <url-pattern>/select/*</url-pattern>
+	    <url-pattern>/Spotfire/*</url-pattern>
+	</servlet-mapping>
+	
+	<filter>
+    	<filter-name>SetCharacterEncoding</filter-name>
+    	<filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
+    	<init-param>
+      		<param-name>encoding</param-name>
+      		<param-value>UTF-8</param-value>
+    	</init-param>
+	    <init-param>
+        	<param-name>ignore</param-name>
+        	<param-value>false</param-value>
+        </init-param>
+  	</filter>
+  	<filter-mapping>
+    	<filter-name>SetCharacterEncoding</filter-name>
+    	<url-pattern>*</url-pattern>
+	</filter-mapping>
+	   	
+	<listener>
+		<listener-class>com.EQ.servlets.EQSessionListener</listener-class>
+	</listener>	  
+	<listener>
+		<listener-class>com.EQ.servlets.EQServerListener</listener-class>
+	</listener>
+    
+</web-app>

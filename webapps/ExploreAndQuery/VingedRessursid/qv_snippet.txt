@@ -1,0 +1,14 @@
+// In qlikview go CTRL-E or File->Edit Script
+// Copy this snippet, press OK and then CTRL-R (File->Reload)
+// The data is loaded and you can create graphs and tables 
+// start snippet
+for i=1 to _COUNT_
+
+SET filename = _FILEPATH_$(i).csv;
+
+LOAD *
+FROM $(filename)
+(txt, codepage is 1252, embedded labels, delimiter is ',', msq);
+
+next
+// end snippet

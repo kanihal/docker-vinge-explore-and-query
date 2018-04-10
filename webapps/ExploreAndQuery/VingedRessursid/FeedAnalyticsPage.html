@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Dat-a-MazeHouse</title>
+
+		<link rel="shortcut icon" href="logo.ico">
+
+		<link rel="stylesheet" href="css/style.css">
+		
+		<script src="JScript/Shared.js"></script>
+		
+		<!-- For Editor Controller -->
+		<script src="js/codemirror.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/sparql_colors.js"></script>
+
+		<script src="js/show-hint.js"></script>
+		<script src="js/spar-hint.js"></script>
+		<link href="css/show-hint.css" rel="stylesheet" >
+
+		<link  href="css/codemirror.css" rel="stylesheet">	
+		<link  href="css/sparqlcolors.css"/ rel="stylesheet" >
+		
+		<script language="javascript">
+			
+			function changeProgressText()
+			{			
+				document.getElementById("download_link").innerHTML = "Export ongoing";
+				return false;
+			}	
+			
+			function toggleResultSetSection(id){
+				
+				var eSelect = document.getElementById(id);
+				if(eSelect.selectedIndex <= 1){
+					changeVisibility('resultset', true)	
+					//document.getElementById('VisualizeJoins').disabled=false;
+				}
+				else{
+					changeVisibility('resultset', false);
+					document.getElementById('resultsets').selectedIndex=0;
+					document.getElementById('new_name').value = "";
+					//document.getElementById('VisualizeJoins').disabled=true;
+				}
+				return false;
+			}
+			
+			function toggleNewName(){
+				var eSelect = document.getElementById('resultsets');
+				var name = eSelect.options[eSelect.selectedIndex].text;	
+				
+				var sql = eSelect.options[eSelect.selectedIndex].title;	
+				
+				if(eSelect.selectedIndex == 0){
+					changeVisibility('new_name_label', true);	
+					changeVisibility('new_name', true);
+					changeVisibility('join_type_label', false);
+					changeVisibility('join_type', false);	
+		
+					document.getElementById('new_name').value = '';
+					changeVisibility('select_string', false);							
+				}
+				else{
+					changeVisibility('new_name_label', false);	
+					changeVisibility('new_name', false);
+					changeVisibility('join_type_label', true);					
+					changeVisibility('join_type', true);
+
+					changeVisibility('select_string', true);	
+					document.getElementById('new_name').value = name;
+					document.getElementById('select_string').innerHTML = sql;					
+				}
+				
+				return false;
+			}			
+			
+			function ClearText(){
+				editor.setValue('');	
+				SPARQL.query.value = '';		
+			}
+			
+		</script>
+			
+    </head>
+    <body onload="toggleResultSetSection('target_tool');toggleNewName()">
+	
+		<br>
+		<!--#include FILE="html/toolbar.html" -->
+		<div id="outer-container">
+			_TOOLBAR_
+			<br>
+			<div id="tools">
+				<input id="Visualize" onclick="visualizeQueryResultSet('resultsets', false)" type="button" class="button_2" value="Visualize Queries in Result Set" title="Show a graph diagram that represents the query currently in the editor and how it links with selected Result Set queries"></input>
+				<input id="VisualizeJoins" onclick="visualizeQueryResultSet('resultsets', true)" type="button" class="button_2" value="Visualize Feed Table" title="Show a graph diagram that represents how different result tables are joined to one Feed table"></input>				
+				<input id="SaveQuery" onclick="SaveQuery()" type="button" class="button_2" value="Save Query" title="Save the query text in file for later reuse"/>	
+				<input id="GetResultSetList" onclick="getResultSetList()" type="button" class="button_2" value="View Result Sets" title="View list of exported result sets"/>					
+			</div>
+		</div>
+		<br>
+		
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!------------------------------ HTML start  ---------------------------------------------Add your site or application content here -->
+
+		<div id="container">
+			FORM_START
+			<table>
+				<tbody>
+					<tr>
+						
+						<td width="1000" valign="top" style="color:gray; font-family:Verdana; font-size:medium; ">
+							
+							<input name=format type="hidden" value=CSV></input>			
+							<input onclick="changeProgressText()" id="Feed" type="submit" class="button_1" value="Export result set"  title="Execute the query and save the result on a web folder in selected format, where they can be downloaded for your analytics tool"></input>									
+							<a href="AbortQuery"><span style="color:#c0004b; font-family:Verdana; font-size:small; padding:25px">Abort long running query!</span></a>	
+							<span style="font-family:Verdana; font-size:medium; ">Target analytics tool:</span>
+							<select name="target_tool" id="target_tool" onchange="toggleResultSetSection('target_tool')">
+								<option title="connect using SELECT * FROM table_name with many BI tools" value="odbc">Generic ODBC</option>								
+								<option value="spotfire">Spotfire</option>
+								<option title="connect using SELECT * FROM view_name over JDBC connected to dynamic SPARQL to SQL view" value="jdbc_view">Dynamic ODBC/JDBC</option>
+								<option value="tableau">Tableau</option>
+								<option value="qlikview">QlikView</option>								
+								<option selected value="CSV">Generic CSV</option>
+								<option value="JSON">Generic JSON</option>
+							</select>	
+							
+							<br><br>
+							
+							<div style="color:blue; font-family:Verdana; font-size:medium; ">
+							<a id="show_prefixes" href="javascript:toggle( 'show_prefixes','user_profile', 'Show Prefixes', 'Hide Prefixes' );">
+							<span >Show Prefixes</span></a>
+							<a href="Explain/SparqlEditor.html" target=\"_blank\"><span style="color:green; font-family:Verdana; font-size:medium;">? Editor Usage</span></a>
+							
+							</div>
+							<div id="user_profile" style="display: none">USER_PROFILE</div>							
+							<textarea id="code" name="query" style="display: none">_QUERY_</textarea>
+												
+						</td>
+							
+						<td/><td/>
+						<td  valign="top" style="color:gray; font-family:Verdana; font-size:medium; ">
+							<br>
+							
+							<span style="font-family:Verdana; font-size:large; ">_LOADSCRIPT_</span>
+							<br><br><br>
+							<span>Name of the result set:</span> 
+							<br>
+							<input size = "50" name=file_name title=""></input>
+							<br><br>						
+
+							<div id="resultset" >
+
+								<span hidden id="join_type_label">How to merge:</span>
+								<select hidden id="join_type" name="join_type" title="Method how to join the new result set with aggregate table">
+									<option value="INNER JOIN" title="Subset of two tables where keys match. No NULL values">Subset (INNER JOIN)</option>
+									<option value="LEFT OUTER JOIN" title="All rows from aggregate table and subset of new result set where keys match. The new aggregate may contain NULL values">Insert new columns (LEFT OUTER JOIN)</option>
+									<!--option value="FULL JOIN" title="All rows from both tables. Merged rows where keys match, otherwise NULL values">Superset (FULL JOIN)</option-->
+									<option value="RELOAD" title="Drop the current table and load from new query">Drop & Reload</option>
+								</select>
+								<br>
+	
+								<br>
+								
+								<span style="color:gray; font-family:Verdana; font-size:medium; ">
+								Add to the Aggregate Result Set: <br>
+								<span title="Join to an existing result set or create a new Result Set">
+								<select selected name="aggregate_result_set" id="resultsets" onchange="toggleNewName()">	
+									<option value="new" title="SELECT * DB.newname">Create New (type name below)</option>
+									_RESULT_SET_LIST_
+								</select>
+								</span>
+								</span>
+								<br>
+								<br><br>
+
+								<span id="new_name_label" >Name of the new Aggregate Result Set:</span> 
+								<input id="new_name" name="new_name" size = "50" name=resultset_name title="Name of the Result Set will be used to create the SQL table for the data of this "></input>	
+
+								<br>
+								<span id="select_string" ></span> 
+								<br><br>
+
+								<a href="Explain/SetupInfoLink.html" target=\"_blank\"><span style="color:green; font-family:Verdana; font-size:medium;">How to setup your Spotfire connection over JDBC</span></a>
+								<br>
+								<a href="Explain/SetupODBCDriver.html" target=\"_blank\"><span style="color:green; font-family:Verdana; font-size:medium;">How to setup your client connection over ODBC</span></a>
+					
+							</div>
+						</td>
+						
+					</tr>
+				</tbody>
+			</table>
+			FORM_END
+			<input id="Clear" onclick="ClearText()" type="button" class="button_2" value="Clear" title="Clear the query"/>	
+			<footer>
+				<hr/>
+				<img src="PoweredByVirtuoso.png" width="120"/><br />
+			</footer>
+		
+		</div>
+		<!-----------------------------  HTML end -------------------------------------------------------------->
+	
+		<script src="js/EC.js"></script>
+	
+    </body>
+</html>

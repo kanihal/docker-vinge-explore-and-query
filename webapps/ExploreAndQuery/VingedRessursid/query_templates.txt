@@ -1,0 +1,110 @@
+Get all instances
+_START_
+#Get all instances
+SELECT DISTINCT ?s ?o
+WHERE
+{
+?s a ?o .
+}
+_END_
+Get count
+_START_
+#Get count
+SELECT count(DISTINCT ?o)
+WHERE
+{
+?s a ?o .
+}
+_END_
+Nested SELECT
+_START_
+#Nested SELECT
+SELECT DISTINCT ?s ?o
+WHERE
+{
+
+{
+SELECT DISTINCT ?s ?o
+WHERE
+{
+?s a ?o .
+}
+}
+
+}
+_END_
+OPTIONAL relation
+_START_
+#OPTIONAL relation
+SELECT DISTINCT ?c ?ap
+WHERE
+{
+
+?c a mondial_m:Country .
+OPTIONAL
+{
+?c tut_m:hasAirport ?ap .
+} 
+
+}
+_END_
+Negation relation (MINUS)
+_START_
+#Negation relation
+SELECT DISTINCT ?country 
+WHERE
+{
+
+?c a mondial_m:Country .
+?c mondial_m:name ?country .
+MINUS
+{
+?c tut_m:isAdjacentTo ?sea .
+} 
+
+}
+_END_
+Property path 
+_START_
+#Property path 
+SELECT DISTINCT ?s ?path ?link ?dist
+WHERE
+{
+
+{
+SELECT DISTINCT ?s ?path ?link ?dist 
+WHERE
+{
+?s tut_m:isAdjacentTo ?o 
+OPTION (transitive, t_distinct, t_in(?s), t_out(?o), t_no_cycles, t_min(1), t_max(2), 
+        t_step(?s) as ?link, t_step('path_id') as ?path, t_step('step_no') as ?dist, t_direction 3) . 
+FILTER (?s= <http://owl.mybb.com/Mondial/data#country__code_s> ) 
+}
+}
+
+}
+_END_
+Aggregation with GROUP BY
+_START_
+#Aggregation with GROUP BY
+SELECT DISTINCT 
+?Sales_salesperson 
+( sum(?_totaldue) as ?sales)
+
+WHERE
+{
+
+{
+SELECT DISTINCT ?Sales_salesperson ?_totaldue 
+WHERE
+{
+?Sales_salesperson a advw_m:Sales_salesperson .
+?Sales_salesorderheader advw_m:ref-salespersonid ?Sales_salesperson .
+?Sales_salesorderheader advw_m:totaldue ?_totaldue .
+}
+}
+
+}
+GROUP BY ?Sales_salesperson 
+HAVING ( sum(?_totaldue) > 5000000 ) 
+ORDER BY (sum(?_totaldue))

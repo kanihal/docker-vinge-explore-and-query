@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Result Set Filtering</title>
+	<link rel="shortcut icon" href="logo.ico"> 
+	<link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="http://spa.libris.kb.se/SpotfireWeb/GetJavaScriptApi.ashx?Version=3.1"></script>
+ 
+    <script type="text/javascript">
+	    var app;
+        window.onload = function()
+        {
+ 
+			var webPlayerCustomization = new spotfire.webPlayer.Customization();
+			webPlayerCustomization.showCustomizableHeader = true;
+			webPlayerCustomization.showTopHeader = true;
+			webPlayerCustomization.showClose = false;
+			webPlayerCustomization.showAnalysisInfo = true;
+			webPlayerCustomization.showToolBar = true;
+			webPlayerCustomization.showExportFile = true;
+			webPlayerCustomization.showExportVisualization = false;
+			webPlayerCustomization.showUndoRedo = true;
+			webPlayerCustomization.showDodPanel = true;
+			webPlayerCustomization.showFilterPanel = true;
+			webPlayerCustomization.showPageNavigation = true;
+			webPlayerCustomization.showStatusBar = true;
+			webPlayerCustomization.showAnalysisInformationTool = false;
+			webPlayerCustomization.showLogout = false;
+			
+			document.domain = 'kb.se';
+            app = new spotfire.webPlayer.Application("http://spa.libris.kb.se/SpotfireWeb/", webPlayerCustomization);
+            
+            // Register an error handler to catch errors.
+            app.onError(errorCallback);
+             
+            // Register event handler for document opened event.
+            app.onOpened(onOpenedCallback);
+             
+            // Register event handler for document closed event.
+            app.onClosed(onDocumentClosedCallback);
+             
+            // Open an analysis.
+            app.open("_ANALYSIS_FILE_", "table-container_web","");
+        }
+         
+        function errorCallback(errorCode, description) {
+            // Displays an error message if something goes wrong in the Web Player.
+            alert(errorCode + ": " + description);
+        }
+ 
+        function onOpenedCallback(analysisDocument)
+        {
+            // Document is now opened and ready for interactions.
+			   var webPlayerDiv = document.getElementById("table-container_web");
+  
+			if (webPlayerDiv != null)
+			{
+				webPlayerDiv.style.left = 1 + "%";
+				webPlayerDiv.style.width = 98 + "%";
+				webPlayerDiv.style.height = 90 + "%";
+			}
+
+        }
+         
+        function onDocumentClosedCallback(analysisPath)
+        {
+            // Document is now closed.
+        }
+		
+		function applySpotfireFilters(){
+			var webPlayer = app;
+			webPlayer.analysisDocument.filtering.getAllModifiedFilterColumns(
+            spotfire.webPlayer.includedFilterSettings.ALL_WITH_CHECKED_HIERARCHY_NODES,
+            function(getModifiedFilterColumnsResponse)
+            {
+ 				var filter_list = dump(getModifiedFilterColumnsResponse);
+				//alert(filter_list);
+				var nexturl = "http://hp07.libris.kb.se/SemDW/Spotfire/ApplyFilters?filter_list=" + encodeURIComponent(filter_list);	
+				window.location = nexturl; 		
+				return false;
+            });			
+		}
+		
+		function dump(obj)
+		{
+			var filter_list = "";
+			
+			for (var i = 0; i < obj.length; i++)
+			{
+				var property = obj[i];
+				var count = 0;
+				
+				for (var key in property)
+				{
+					count++;
+					switch (key)
+					{
+
+						case "dataColumnName":
+							filter_list += "<br>" + property[key] + ":";
+							break;
+						case "filterType":
+							filter_list += property[key];
+							break;
+						
+						case "filterSettings":
+							var filterSettingsCount = 0;
+							filter_list += key + "{";
+							var filterSettings = property[key];
+							
+							for (var setting in filterSettings)
+							{
+								filterSettingsCount++;
+								
+								switch (setting)
+								{
+									case "highValue":
+									case "lowValue":
+								    case "searchPattern":
+										filter_list += filterSettings[setting] == null
+											? ""
+											: setting + ":'" + filterSettings[setting] + "',";
+										break;
+										
+									case "values":
+										filter_list += setting + ":[";
+										
+										for (var j = 0; j < filterSettings[setting].length; j++)
+										{
+											filter_list += "'" + filterSettings[setting][j] + "',";
+										}
+										filter_list += "],";
+										
+										break;
+								}
+							}
+							filter_list += "},"
+					}
+				}
+
+			}
+			
+			return filter_list;
+		}
+		
+    </script>
+ 
+</head>
+<body>
+	<br>
+	<div id="outer-container" style="width: 1820px;  ">
+		<div id="toolbar">
+		<ul>
+			<input id="ApplyFilters" onclick="applySpotfireFilters()" type="button" class="button_2" value="Apply Filters" title="Apply these filters to inital SPARQL Query"/>	
+			<li><img align="left" src="Vinge3w.png" height="40"/></li>
+			<li><img align="left" src="img/spotfire-partner-logo.jpg" /></li>
+		    <li><a href="TheMethod.html" title="Take a look what The ELTF Method is about"><span style="_MENU_STYLE_METHOD_">"The Method"</span></a></li>
+			<li><a href="SimpleSearchPage" title="Simple Free Text based search"><span style="_MENU_STYLE_SEARCH_">Search</span></a></li>		
+			<li><a href="ExploreDataPage" title="Explore your Data by querying using SAPARQL, navigate and visualize your data graph"><span style="color:white;font-weight:bold;">Explore</span></a></li>
+			<li><a href="FeedAnalyticsPage" title="Feed Analytics: Export result sets or connect to analytics, visualization or mining tools"><span style="_MENU_STYLE_FEED_">(F)eed</span></a></li>
+			<li><a href="AdminPage" title="Administer users, projects and sources. Login"><span style="_MENU_STYLE_ADMIN_">Home&Admin</span></a></li>
+			<li><a href="StatusPage" title="Monitor the status and progress of your system" target="_blank"><span style="_MENU_STYLE_STATUS_">Status</span></a></li>
+			<li><a href="https://tryspotfire.tibco.com/us/get-spotfire?Referral_Code=Vinge"><img src="img/get-spotfire-banner.jpg" height="40"/></a></li>
+		</ul>
+		</div>
+	</div>
+    <div id="table-container_web" style="position:absolute;"></div>
+
+	
+</body>
+</html>

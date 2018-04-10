@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="logo.ico"> 
+<style type="text/css">a {text-decoration: none}</style>
+<title></title>
+<script language="javascript">
+	function setTable(what){	
+		if(document.getElementById(what).style.display=="none")
+		{
+			document.getElementById(what).style.display="block";	
+		}	
+		else if (document.getElementById(what).style.display=="block")
+		{		
+			document.getElementById(what).style.display="none";	
+		}
+	}
+
+	function deleteThing()
+	{
+		if(confirm("Are you sure to delete?")){
+			var nexturl = location.pathname + "/../delete?uri=_DELETEURI_";	
+			window.location = nexturl; 		
+		}
+		return false;
+	}		
+			
+</script>
+   <style>
+		table {border:solid 1px gray; border-collapse:collapse; table-layout:fixed; width:1800px;}
+		table th {border:solid 1px gray; width:100px; word-wrap:break-word; padding:5px; text-align:left; background-color:#F2F2F1; }
+		table td {border:solid 1px lightgray; width:100px; word-wrap:break-word; padding:5px;}
+
+   </style>
+</head>
+<body>
+<br>
+<div id="outer-container" style="width: 1820px;  ">
+	_TOOLBAR_
+</div>
+<br>
+<div id="table-container">	
+	_NAV_GRAPH_
+	
+	<span style="font-family:Verdana; font-size:medium; ">Query result table (_COUNT_)</span>
+	<br>
+	<span style="font-family:Verdana; font-size:small; ">execution time: _EXECTIME_ seconds</span>
+	<br>
+	<span style="display:block;">_TABLE_</span>
+	<br>
+	<!--span style="font-family:Verdana; font-size:medium; font-weight:bold; ">The query was :</span-->
+	<br><br>
+	<span style="font-family:Verdana; font-size:small; ">_QUERY_</span>
+	<br>
+</div>
+<br>
+</body>
+</html>

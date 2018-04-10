@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Data Migration and Integration - better ETL</title>
+
+        <!-- Place image in the root directory -->
+		<link rel="logo" href="../logo.JPG">
+
+		<link rel="stylesheet" href="css/style.css">
+
+		<script language="javascript">
+			function ltrim(text) {    return escape(text);}
+			
+			function showProgress()
+			{	var nexturl = location.pathname + "/ProgressInfo";	
+			window.open = nexturl; 		
+			return false;
+			}
+
+			function generateSPARQL(){
+
+				var sparql = SPARQL.query.value;
+				var nexturl = location.pathname + "/../GenerateSPARQL";
+
+				window.location = nexturl; 	
+				return false;
+			}
+
+			function SaveQuery()
+			{
+				var sparql = SPARQL.query.value;	
+				var nexturl = location.pathname + "/../save?query=" + escape(sparql);	
+				window.location = nexturl; 		
+				return false;
+			}		
+			
+			function visualize()
+			{
+				var sparql = SPARQL.query.value;	
+				var nexturl = location.pathname + "/../visualize?query=" + escape(sparql);	
+				window.location = nexturl; 		
+				return false;
+			}		
+
+			function visualizeNav()
+			{
+				var nexturl = location.pathname + "/../visualize/navigation";	
+				window.location = nexturl; 		
+				return false;
+			}		
+			
+			function convertToRule()
+			{
+				var sparql = SPARQL.query.value;	
+				var nexturl = location.pathname + "/../ConvertToRule?query=" + escape(sparql) + "&format=text%2Fhtml&origin=explorequery";	
+				window.location = nexturl; 		
+				return false;
+			}	
+			
+		</script>
+    </head>
+    <body bgcolor=#F2F2F2>
+		<!--#include FILE="html/toolbar.html" -->
+		_TOOLBAR_
+
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!------------------------------ HTML start  ---------------------------------------------Add your site or application content here -->
+			<!--div style="background-color:lightblue; color:lightblue;">.</div-->
+			<div style="background-color:lightblue">
+			<span style="font-family: Georgia, Times New Roman, Times, serif; font-size: 32px; color:#771414;">Explore Data</span>
+			<button id="Visualize" onclick="visualize()" type="button" title="Show a graph diagram that represents the query currently in the editor">
+				<span>Visualize Query</span>
+			</button>
+			<button id="visualizeNav" onclick="visualizeNav()" type="button" title="Show a graph diagram that represents your navigation path in Linked Data Browser since last Run Query">
+				<span>Visualize Navigation</span>
+			</button>
+			<button id="Generate" onclick="generateSPARQL()" type="button" title="Generates SPARQL query based on your latest Linked Data Navigation history">
+				<span>Generate Query</span>
+			</button>
+			<button id="ConvertToRule" onclick="convertToRule()" type="button" title="Converts the SELECT query currently in the editor to CONSTRUCT statement (entailment rule)">
+				<span>Convert to Rule</span>
+			</button>	
+			<button id="SaveQuery" onclick="SaveQuery()" type="button" title="Save the query text in file for later reuse">
+				<span>Save Query</span>
+			</button>					
+			
+			<!--a target="_blank" href="ProgressInfo"><span style="font-family:Verdana; font-size:small; ">See progress info (only for #LOOP queries)</span></a-->
+			<a href="AbortQuery"><span style="color:#c0004b; font-family:Verdana; font-size:medium; ">Abort long running query!</span></a>
+			</div>	
+			<div style="background-color:lightblue; color:lightblue;">.</div>
+			<div style="background-color:lightgray">			
+			<span>FORM_START</span>
+			<input name=origin type="hidden" value=explorequery></input>
+			<button id="Query" type="submit"><span style="font-family:Verdana; font-size:large; font-weight:bold;" title="Execeute the query in editor to the selected outpiut format">Run Query</span></button>			
+			<span>Result Format</span><span>RESULT_FORMAT </span> 			
+			<span>Time out after TIME_OUT_VAL seconds</span>
+				
+			<table height="500">
+				<tbody>
+					<tr>
+						<td width="1000">
+							<textarea style="color:blue; font-family:Verdana; font-size:small; height:100%; width:100%; " cols="118" id="query" name="query" rows="31">DEF_QUERY</textarea>
+						</td>
+						<td/><td/>
+						<td valign="top">
+							<span style="font-family:Verdana; font-size:medium; ">USER_PROFILE</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<span>FORM_END</span>
+			</div>
+			<span style="font-family:Verdana; font-size:small; ">Load query from local file:</span>FILE_LOAD
+
+			<footer>
+				<hr/>
+				<img src="PoweredByVirtuoso.png" width="120"/><br />
+			</footer>
+		
+	
+		<!-----------------------------  HTML end -------------------------------------------------------------->
+
+            
+        <script src="js/plugins.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>

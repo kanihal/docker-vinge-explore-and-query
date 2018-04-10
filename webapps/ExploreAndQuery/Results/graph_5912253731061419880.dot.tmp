@@ -1,0 +1,27 @@
+digraph G {
+rankdir=LR;
+graph [ charset="UTF-8", fontname=Helvetica, fontsize=10, splines=true ];
+node [ fontname=Verdana, fontsize=9, overlap=false, height=0.35 ];
+edge [ fontname=Verdana, fontsize=8, arrowhead=vee, arrowsize=0.5 ];
+a_wordnet_person_100007846httpyagoknowledgeorgresource [label="a wordnet person
+100007846", style="filled,rounded", shape="box", color="gray", fillcolor="green" fontcolor="white", penwidth=0.5 , URL="../describe?uri=http://yago-knowledge.org/resource/Narendra_Modi&amp;p=http://www.w3.org/1999/02/22-rdf-syntax-ns%23type", target="_top"]
+httpyagoknowledgeorgresourcewordnet_person_100007846[id="httpyagoknowledgeorgresourcewordnet_person_100007846", label="wordnet person
+100007846", style="filled,rounded", shape="ellipse", color="gray", fillcolor="white" fontcolor="green", penwidth=0.5 , URL="../describe?uri=http://yago-knowledge.org/resource/wordnet_person_100007846&amp;p=http://www.w3.org/1999/02/22-rdf-syntax-ns%23type", target="_top"]
+a_wordnet_person_100007846httpyagoknowledgeorgresource -> httpyagoknowledgeorgresourcewordnet_person_100007846[label="type", style="filled", color="black", fillcolor="gray" fontcolor="brown", penwidth=0.2, URL="../select/navmapedgeremove?index=0", target="_top"]
+a_wordnet_person_100007846httpyagoknowledgeorgresource [label="a wordnet person
+100007846", style="filled,rounded", shape="box", color="gray", fillcolor="green" fontcolor="white", penwidth=0.5 , URL="../describe?uri=http://yago-knowledge.org/resource/Narendra_Modi&amp;p=http://yago-knowledge.org/resource/infobox/en/name", target="_top"]
+untyped_string_httpyagoknowledgeorgresourceinfoboxenname [id="untyped_string_httpyagoknowledgeorgresourceinfoboxenname1" ,label="untyped string", fontsize=8, shape="box",  height=0.2, style="filled,rounded", fillcolor="#754719", color="gray", fontcolor="white" , URL="../describe?uri=http://yago-knowledge.org/resource/infobox/en/name&amp;s=http://yago-knowledge.org/resource/Narendra_Modi&amp;p=http://yago-knowledge.org/resource/infobox/en/name", target="_top"]
+a_wordnet_person_100007846httpyagoknowledgeorgresource -> untyped_string_httpyagoknowledgeorgresourceinfoboxenname[weight=2.0, label="name", style="filled", color="black", fillcolor="gray" fontcolor="brown", penwidth=0.2, URL="../select/navmapedgeremove?index=1", target="_top"]
+a_wordnet_person_100007846httpyagoknowledgeorgresource [label="a wordnet person
+100007846", style="filled,rounded", shape="box", color="gray", fillcolor="green" fontcolor="white", penwidth=0.5 , URL="../describe?uri=http://yago-knowledge.org/resource/Narendra_Modi&amp;p=http://yago-knowledge.org/resource/hasWikipediaUrl", target="_top"]
+Narendra_Modihttpenwikipediaorgwiki[id="Narendra_Modihttpenwikipediaorgwiki", label="Narendra Modi", style="filled,rounded", shape="box", color="gray", fillcolor="white" fontcolor="green", penwidth=0.5 , URL="../describe?uri=http://en.wikipedia.org/wiki/Narendra_Modi&amp;p=http://yago-knowledge.org/resource/hasWikipediaUrl", target="_top"]
+a_wordnet_person_100007846httpyagoknowledgeorgresource -> Narendra_Modihttpenwikipediaorgwiki[label="hasWikipediaUrl", style="filled", color="black", fillcolor="gray" fontcolor="brown", penwidth=0.2, URL="../select/navmapedgeremove?index=2", target="_top"]
+a_wordnet_person_100007846httpyagoknowledgeorgresource [label="a wordnet person
+100007846", style="filled,rounded", shape="box", color="gray", fillcolor="green" fontcolor="white", penwidth=0.5 , URL="../describe?uri=http://yago-knowledge.org/resource/Narendra_Modi&amp;p=http://yago-knowledge.org/resource/hasWikipediaAnchorText", target="_top"]
+untyped_string_httpyagoknowledgeorgresourcehasWikipediaAnchorText [id="untyped_string_httpyagoknowledgeorgresourcehasWikipediaAnchorText3" ,label="untyped string", fontsize=8, shape="box",  height=0.2, style="filled,rounded", fillcolor="#754719", color="gray", fontcolor="white" , URL="../describe?uri=http://yago-knowledge.org/resource/hasWikipediaAnchorText&amp;s=http://yago-knowledge.org/resource/Narendra_Modi&amp;p=http://yago-knowledge.org/resource/hasWikipediaAnchorText", target="_top"]
+a_wordnet_person_100007846httpyagoknowledgeorgresource -> untyped_string_httpyagoknowledgeorgresourcehasWikipediaAnchorText[weight=2.0, label="hasWikipediaAnchorText", style="filled", color="black", fillcolor="gray" fontcolor="brown", penwidth=0.2, URL="../select/navmapedgeremove?index=3", target="_top"]
+a_wordnet_person_100007846httpyagoknowledgeorgresource [label="a wordnet person
+100007846", style="filled,rounded", shape="box", color="gray", fillcolor="green" fontcolor="white", penwidth=0.5 , URL="../describe?uri=http://yago-knowledge.org/resource/Narendra_Modi&amp;p=http://yago-knowledge.org/resource/infobox/en/birthname", target="_top"]
+untyped_string_httpyagoknowledgeorgresourceinfoboxenbirthname [id="untyped_string_httpyagoknowledgeorgresourceinfoboxenbirthname4" ,label="untyped string", fontsize=8, shape="box",  height=0.2, style="filled,rounded", fillcolor="#754719", color="gray", fontcolor="white" , URL="../describe?uri=http://yago-knowledge.org/resource/infobox/en/birthname&amp;s=http://yago-knowledge.org/resource/Narendra_Modi&amp;p=http://yago-knowledge.org/resource/infobox/en/birthname", target="_top"]
+a_wordnet_person_100007846httpyagoknowledgeorgresource -> untyped_string_httpyagoknowledgeorgresourceinfoboxenbirthname[weight=2.0, label="birthname", style="filled", color="black", fillcolor="gray" fontcolor="brown", penwidth=0.2, URL="../select/navmapedgeremove?index=4", target="_top"]
+}

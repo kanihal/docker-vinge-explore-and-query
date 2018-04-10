@@ -1,0 +1,1 @@
+	<div style="color:brown; font-family:Verdana; font-size:small; ">		<a id="matching_results" href="javascript:toggle( 'matching_results','no_matching_results', 'Show up to 25 first matching results', 'Hide matching results' );">		<span >Show up to 25 first matching results</span></a>	</div>	<div id="no_matching_results" style="display: none ">_NAVMAP_QUERY_RESULTS_</div>
