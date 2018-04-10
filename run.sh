@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 #sudo docker-compose up
 
 #start the container 

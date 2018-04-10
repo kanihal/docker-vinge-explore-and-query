@@ -29,7 +29,7 @@
 		</init-param> 	
 		
 
-		<!-- JAGGI NEED TO CHANGE THIS -->
+		<!-- JAGGI : NEED TO CHANGE THIS -->
 		<init-param > 
 			<param-name >rootURI</param-name > 
 			<param-value >http://10.129.3.103:8081/ExploreAndQuery</param-value > 
