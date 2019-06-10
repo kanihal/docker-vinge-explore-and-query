@@ -1,6 +1,6 @@
 # tomcat_vinge
 
-usage instructions
+Usage instructions
 
 1. clone this repo, cd into the repo
 
@@ -9,7 +9,7 @@ git clone https://github.com/kanihal/tomcat_vinge/
 cd tomcat_vinge
 ```
 
-2. modify the rootURI param value (that you would enter in the browser for accessing browser) in 
+2. modify the rootURI param value (that you would enter in the browser for accessing this applet) in 
 `webapps/ExploreAndQuery/WEB-INF/web.xml`
 ```
         <init-param > 
@@ -32,4 +32,4 @@ sudo ./run.sh
 Watch this video -> https://www.youtube.com/watch?v=lmmJISXkNP0
 
 
-Source - http://www.vingefree.com/explorequery/
+Vinge Software Website - http://www.vingefree.com/explorequery/
