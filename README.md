@@ -33,3 +33,5 @@ Watch this video -> https://www.youtube.com/watch?v=lmmJISXkNP0
 
 
 Vinge Software Website - http://www.vingefree.com/explorequery/
+
+For more configuration options, please take a look at - `webapps/ExploreAndQuery/InstallationandConfiguration.pdf`
