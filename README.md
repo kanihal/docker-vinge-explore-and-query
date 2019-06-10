@@ -1,8 +1,8 @@
-# tomcat_vinge
+# docker-vinge-explore-and-query
 
 Usage instructions
 
-1. clone this repo, cd into the repo
+1. clone this repo, cd into the repository
 
 ```
 git clone https://github.com/kanihal/tomcat_vinge/
