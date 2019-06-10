@@ -18,7 +18,7 @@ cd tomcat_vinge
         </init-param >  
  ```
  
-3. 
+3. build docker image
 ```
 sudo docker build -t tomcat_vinge .
 ```
