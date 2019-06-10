@@ -30,3 +30,6 @@ sudo ./run.sh
 
 ### How to use
 Watch this video -> https://www.youtube.com/watch?v=lmmJISXkNP0
+
+
+Source - http://www.vingefree.com/explorequery/
