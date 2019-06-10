@@ -27,3 +27,6 @@ sudo docker build -t tomcat_vinge .
 ```
 sudo ./run.sh 
 ```
+
+### How to use
+Watch this video -> https://www.youtube.com/watch?v=lmmJISXkNP0
