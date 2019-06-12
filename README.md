@@ -5,8 +5,8 @@ Usage instructions
 1. clone this repository, cd into it
 
 ```
-git clone https://github.com/kanihal/tomcat_vinge/
-cd tomcat_vinge
+git clone https://github.com/kanihal/docker-vinge-explore-and-query/
+cd docker-vinge-explore-and-query
 ```
 
 2. modify the rootURI param value (that you would enter in the browser for accessing this applet) in 
