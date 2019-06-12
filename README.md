@@ -2,7 +2,7 @@
 
 Usage instructions
 
-1. clone this repo, cd into the repository
+1. clone this repository, cd into it
 
 ```
 git clone https://github.com/kanihal/tomcat_vinge/
