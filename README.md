@@ -17,6 +17,8 @@ cd tomcat_vinge
             <param-value >http://10.129.3.103:8081/ExploreAndQuery</param-value > 
         </init-param >  
  ```
+ for eg: if you are running on your local machine  you could use `http://127.0.0.1:8081` or `http://localhost:8081`
+ 
  
 3. build docker image
 ```
